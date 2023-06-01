@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Localization;
+using ToolsBazaar.Domain.CustomerAggregate;
 using ToolsBazaar.Domain.ProductAggregate;
 using ToolsBazaar.Persistence;
 
@@ -6,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddTransient<IProductRepository, ProductRepository>();
+builder.Services.AddTransient<ICustomerRepository, CustomerRepository>();
 
 var app = builder.Build();
 
