@@ -19,10 +19,19 @@ public class CustomersController : ControllerBase
     }
 
     [HttpPut("{customerId:int}")]
-    public void UpdateCustomerName([FromRoute] int customerId, [FromBody] CustomerDto dto)
+
+    public IActionResult UpdateCustomerName([FromRoute] int customerId, [FromBody] CustomerDto dto)
     {
         _logger.LogInformation($"Updating customer #{customerId} name...");
 
-        _customerRepository.UpdateCustomerName(customerId, dto.Name);
+        var customer = _customerRepository.UpdateCustomerName(customerId, dto.Name);
+
+        if (customer == null)
+        {
+            _logger.LogWarning($"Customer id #{customerId} not found!");
+            return NotFound();
+        }
+
+        return NoContent();
     }
 }

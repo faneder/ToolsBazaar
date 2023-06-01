@@ -2,6 +2,6 @@
 
 public interface ICustomerRepository
 {
-    void UpdateCustomerName(int customerId, string name);
+    Customer? UpdateCustomerName(int customerId, string name);
     IEnumerable<Customer> GetAll();
 }
