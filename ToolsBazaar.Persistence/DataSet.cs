@@ -1,6 +1,7 @@
 ﻿using ToolsBazaar.Domain.CustomerAggregate;
 using ToolsBazaar.Domain.ProductAggregate;
 using ToolsBazaar.Domain.OrderAggregate;
+using System.Globalization;
 
 namespace ToolsBazaar.Persistence
 {
@@ -696,7 +697,7 @@ namespace ToolsBazaar.Persistence
                     Customer = GetCustomerById(3),
                     Date =
                         DateTime
-                           .Parse("10/9/2010"),
+                            .ParseExact("10/9/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -731,8 +732,7 @@ namespace ToolsBazaar.Persistence
                     Id = 2,
                     Customer = GetCustomerById(45),
                     Date =
-                        DateTime
-                           .Parse("4/17/2022"),
+                        DateTime.ParseExact("4/17/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -751,8 +751,7 @@ namespace ToolsBazaar.Persistence
                     Id = 3,
                     Customer = GetCustomerById(73),
                     Date =
-                        DateTime
-                           .Parse("4/16/2021"),
+                        DateTime.ParseExact("4/16/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -795,8 +794,7 @@ namespace ToolsBazaar.Persistence
                     Id = 4,
                     Customer = GetCustomerById(11),
                     Date =
-                        DateTime
-                           .Parse("9/26/2015"),
+                        DateTime.ParseExact("9/26/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -815,8 +813,7 @@ namespace ToolsBazaar.Persistence
                     Id = 5,
                     Customer = GetCustomerById(87),
                     Date =
-                        DateTime
-                           .Parse("3/10/2016"),
+                        DateTime.ParseExact("3/10/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -835,8 +832,7 @@ namespace ToolsBazaar.Persistence
                     Id = 6,
                     Customer = GetCustomerById(61),
                     Date =
-                        DateTime
-                           .Parse("8/31/2018"),
+                        DateTime.ParseExact("8/31/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -887,8 +883,7 @@ namespace ToolsBazaar.Persistence
                     Id = 7,
                     Customer = GetCustomerById(61),
                     Date =
-                        DateTime
-                           .Parse("10/17/2022"),
+                        DateTime.ParseExact("10/17/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -923,8 +918,7 @@ namespace ToolsBazaar.Persistence
                     Id = 8,
                     Customer = GetCustomerById(49),
                     Date =
-                        DateTime
-                           .Parse("7/15/2015"),
+                        DateTime.ParseExact("7/15/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -967,8 +961,7 @@ namespace ToolsBazaar.Persistence
                     Id = 9,
                     Customer = GetCustomerById(55),
                     Date =
-                        DateTime
-                           .Parse("10/24/2021"),
+                        DateTime.ParseExact("10/24/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1011,8 +1004,7 @@ namespace ToolsBazaar.Persistence
                     Id = 10,
                     Customer = GetCustomerById(87),
                     Date =
-                        DateTime
-                           .Parse("9/25/2021"),
+                        DateTime.ParseExact("9/25/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1039,8 +1031,7 @@ namespace ToolsBazaar.Persistence
                     Id = 11,
                     Customer = GetCustomerById(15),
                     Date =
-                        DateTime
-                           .Parse("2/10/2022"),
+                        DateTime.ParseExact("2/10/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1075,8 +1066,7 @@ namespace ToolsBazaar.Persistence
                     Id = 12,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("6/15/2021"),
+                        DateTime.ParseExact("6/15/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1119,8 +1109,7 @@ namespace ToolsBazaar.Persistence
                     Id = 13,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("4/15/2012"),
+                        DateTime.ParseExact("4/15/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1139,8 +1128,7 @@ namespace ToolsBazaar.Persistence
                     Id = 14,
                     Customer = GetCustomerById(13),
                     Date =
-                        DateTime
-                           .Parse("5/26/2016"),
+                        DateTime.ParseExact("5/26/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1159,8 +1147,7 @@ namespace ToolsBazaar.Persistence
                     Id = 15,
                     Customer = GetCustomerById(19),
                     Date =
-                        DateTime
-                           .Parse("10/13/2022"),
+                        DateTime.ParseExact("10/13/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1179,8 +1166,7 @@ namespace ToolsBazaar.Persistence
                     Id = 16,
                     Customer = GetCustomerById(35),
                     Date =
-                        DateTime
-                           .Parse("6/6/2021"),
+                        DateTime.ParseExact("6/6/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1215,8 +1201,7 @@ namespace ToolsBazaar.Persistence
                     Id = 17,
                     Customer = GetCustomerById(19),
                     Date =
-                        DateTime
-                           .Parse("8/2/2017"),
+                        DateTime.ParseExact("8/2/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1307,8 +1292,7 @@ namespace ToolsBazaar.Persistence
                     Id = 18,
                     Customer = GetCustomerById(45),
                     Date =
-                        DateTime
-                           .Parse("8/12/2019"),
+                        DateTime.ParseExact("8/12/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1359,8 +1343,7 @@ namespace ToolsBazaar.Persistence
                     Id = 19,
                     Customer = GetCustomerById(91),
                     Date =
-                        DateTime
-                           .Parse("10/25/2011"),
+                        DateTime.ParseExact("10/25/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1411,8 +1394,7 @@ namespace ToolsBazaar.Persistence
                     Id = 20,
                     Customer = GetCustomerById(45),
                     Date =
-                        DateTime
-                           .Parse("9/2/2019"),
+                        DateTime.ParseExact("9/2/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1431,8 +1413,7 @@ namespace ToolsBazaar.Persistence
                     Id = 21,
                     Customer = GetCustomerById(87),
                     Date =
-                        DateTime
-                           .Parse("3/26/2022"),
+                        DateTime.ParseExact("3/26/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1451,8 +1432,7 @@ namespace ToolsBazaar.Persistence
                     Id = 22,
                     Customer = GetCustomerById(1),
                     Date =
-                        DateTime
-                           .Parse("6/22/2018"),
+                        DateTime.ParseExact("6/22/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1527,8 +1507,7 @@ namespace ToolsBazaar.Persistence
                     Id = 23,
                     Customer = GetCustomerById(73),
                     Date =
-                        DateTime
-                           .Parse("1/30/2022"),
+                        DateTime.ParseExact("1/30/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1587,8 +1566,7 @@ namespace ToolsBazaar.Persistence
                     Id = 24,
                     Customer = GetCustomerById(9),
                     Date =
-                        DateTime
-                           .Parse("11/21/2018"),
+                        DateTime.ParseExact("11/21/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1607,8 +1585,7 @@ namespace ToolsBazaar.Persistence
                     Id = 25,
                     Customer = GetCustomerById(9),
                     Date =
-                        DateTime
-                           .Parse("6/8/2013"),
+                        DateTime.ParseExact("6/8/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1627,8 +1604,7 @@ namespace ToolsBazaar.Persistence
                     Id = 26,
                     Customer = GetCustomerById(31),
                     Date =
-                        DateTime
-                           .Parse("9/15/2014"),
+                        DateTime.ParseExact("9/15/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1703,8 +1679,7 @@ namespace ToolsBazaar.Persistence
                     Id = 27,
                     Customer = GetCustomerById(39),
                     Date =
-                        DateTime
-                           .Parse("8/15/2019"),
+                        DateTime.ParseExact("8/15/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1779,8 +1754,7 @@ namespace ToolsBazaar.Persistence
                     Id = 28,
                     Customer = GetCustomerById(3),
                     Date =
-                        DateTime
-                           .Parse("3/24/2020"),
+                        DateTime.ParseExact("3/24/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1807,8 +1781,7 @@ namespace ToolsBazaar.Persistence
                     Id = 29,
                     Customer = GetCustomerById(95),
                     Date =
-                        DateTime
-                           .Parse("4/30/2011"),
+                        DateTime.ParseExact("4/30/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1835,8 +1808,7 @@ namespace ToolsBazaar.Persistence
                     Id = 30,
                     Customer = GetCustomerById(1),
                     Date =
-                        DateTime
-                           .Parse("10/19/2021"),
+                        DateTime.ParseExact("10/19/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1887,8 +1859,7 @@ namespace ToolsBazaar.Persistence
                     Id = 31,
                     Customer = GetCustomerById(59),
                     Date =
-                        DateTime
-                           .Parse("10/2/2018"),
+                        DateTime.ParseExact("10/2/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1939,8 +1910,7 @@ namespace ToolsBazaar.Persistence
                     Id = 32,
                     Customer = GetCustomerById(31),
                     Date =
-                        DateTime
-                           .Parse("11/3/2016"),
+                        DateTime.ParseExact("11/3/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -1991,8 +1961,7 @@ namespace ToolsBazaar.Persistence
                     Id = 33,
                     Customer = GetCustomerById(95),
                     Date =
-                        DateTime
-                           .Parse("11/30/2013"),
+                        DateTime.ParseExact("11/30/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2011,8 +1980,7 @@ namespace ToolsBazaar.Persistence
                     Id = 34,
                     Customer = GetCustomerById(91),
                     Date =
-                        DateTime
-                           .Parse("10/2/2015"),
+                        DateTime.ParseExact("10/2/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2031,8 +1999,7 @@ namespace ToolsBazaar.Persistence
                     Id = 35,
                     Customer = GetCustomerById(57),
                     Date =
-                        DateTime
-                           .Parse("12/23/2018"),
+                        DateTime.ParseExact("12/23/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2091,8 +2058,7 @@ namespace ToolsBazaar.Persistence
                     Id = 36,
                     Customer = GetCustomerById(33),
                     Date =
-                        DateTime
-                           .Parse("8/14/2021"),
+                        DateTime.ParseExact("8/14/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2111,8 +2077,7 @@ namespace ToolsBazaar.Persistence
                     Id = 37,
                     Customer = GetCustomerById(25),
                     Date =
-                        DateTime
-                           .Parse("1/24/2018"),
+                        DateTime.ParseExact("1/24/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2139,8 +2104,7 @@ namespace ToolsBazaar.Persistence
                     Id = 38,
                     Customer = GetCustomerById(41),
                     Date =
-                        DateTime
-                           .Parse("12/25/2019"),
+                        DateTime.ParseExact("12/25/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2167,8 +2131,7 @@ namespace ToolsBazaar.Persistence
                     Id = 39,
                     Customer = GetCustomerById(1),
                     Date =
-                        DateTime
-                           .Parse("12/22/2015"),
+                        DateTime.ParseExact("12/22/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2227,8 +2190,7 @@ namespace ToolsBazaar.Persistence
                     Id = 40,
                     Customer = GetCustomerById(1),
                     Date =
-                        DateTime
-                           .Parse("10/28/2015"),
+                        DateTime.ParseExact("10/28/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2247,8 +2209,7 @@ namespace ToolsBazaar.Persistence
                     Id = 41,
                     Customer = GetCustomerById(21),
                     Date =
-                        DateTime
-                           .Parse("11/20/2021"),
+                        DateTime.ParseExact("11/20/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2283,8 +2244,7 @@ namespace ToolsBazaar.Persistence
                     Id = 42,
                     Customer = GetCustomerById(37),
                     Date =
-                        DateTime
-                           .Parse("10/15/2017"),
+                        DateTime.ParseExact("10/15/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2311,8 +2271,7 @@ namespace ToolsBazaar.Persistence
                     Id = 43,
                     Customer = GetCustomerById(5),
                     Date =
-                        DateTime
-                           .Parse("12/19/2013"),
+                        DateTime.ParseExact("12/19/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2347,8 +2306,7 @@ namespace ToolsBazaar.Persistence
                     Id = 44,
                     Customer = GetCustomerById(51),
                     Date =
-                        DateTime
-                           .Parse("9/28/2021"),
+                        DateTime.ParseExact("9/28/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2399,8 +2357,7 @@ namespace ToolsBazaar.Persistence
                     Id = 45,
                     Customer = GetCustomerById(63),
                     Date =
-                        DateTime
-                           .Parse("11/15/2022"),
+                        DateTime.ParseExact("11/15/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2419,8 +2376,7 @@ namespace ToolsBazaar.Persistence
                     Id = 46,
                     Customer = GetCustomerById(45),
                     Date =
-                        DateTime
-                           .Parse("10/18/2022"),
+                        DateTime.ParseExact("10/18/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2487,8 +2443,7 @@ namespace ToolsBazaar.Persistence
                     Id = 47,
                     Customer = GetCustomerById(89),
                     Date =
-                        DateTime
-                           .Parse("12/11/2011"),
+                        DateTime.ParseExact("12/11/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2507,8 +2462,7 @@ namespace ToolsBazaar.Persistence
                     Id = 48,
                     Customer = GetCustomerById(63),
                     Date =
-                        DateTime
-                           .Parse("1/22/2023"),
+                        DateTime.ParseExact("1/22/2023", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2535,8 +2489,7 @@ namespace ToolsBazaar.Persistence
                     Id = 49,
                     Customer = GetCustomerById(31),
                     Date =
-                        DateTime
-                           .Parse("8/31/2022"),
+                        DateTime.ParseExact("8/31/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2603,8 +2556,7 @@ namespace ToolsBazaar.Persistence
                     Id = 50,
                     Customer = GetCustomerById(91),
                     Date =
-                        DateTime
-                           .Parse("4/18/2021"),
+                        DateTime.ParseExact("4/18/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2623,8 +2575,7 @@ namespace ToolsBazaar.Persistence
                     Id = 51,
                     Customer = GetCustomerById(51),
                     Date =
-                        DateTime
-                           .Parse("2/8/2010"),
+                        DateTime.ParseExact("2/8/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2643,8 +2594,7 @@ namespace ToolsBazaar.Persistence
                     Id = 52,
                     Customer = GetCustomerById(11),
                     Date =
-                        DateTime
-                           .Parse("11/17/2013"),
+                        DateTime.ParseExact("11/17/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2687,8 +2637,7 @@ namespace ToolsBazaar.Persistence
                     Id = 53,
                     Customer = GetCustomerById(49),
                     Date =
-                        DateTime
-                           .Parse("3/22/2011"),
+                        DateTime.ParseExact("3/22/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2707,8 +2656,7 @@ namespace ToolsBazaar.Persistence
                     Id = 54,
                     Customer = GetCustomerById(87),
                     Date =
-                        DateTime
-                           .Parse("1/11/2020"),
+                        DateTime.ParseExact("1/11/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2743,8 +2691,7 @@ namespace ToolsBazaar.Persistence
                     Id = 55,
                     Customer = GetCustomerById(77),
                     Date =
-                        DateTime
-                           .Parse("10/27/2010"),
+                        DateTime.ParseExact("10/27/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2771,8 +2718,7 @@ namespace ToolsBazaar.Persistence
                     Id = 56,
                     Customer = GetCustomerById(23),
                     Date =
-                        DateTime
-                           .Parse("7/12/2021"),
+                        DateTime.ParseExact("7/12/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2791,8 +2737,7 @@ namespace ToolsBazaar.Persistence
                     Id = 57,
                     Customer = GetCustomerById(81),
                     Date =
-                        DateTime
-                           .Parse("10/16/2012"),
+                        DateTime.ParseExact("10/16/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2867,8 +2812,7 @@ namespace ToolsBazaar.Persistence
                     Id = 58,
                     Customer = GetCustomerById(99),
                     Date =
-                        DateTime
-                           .Parse("7/10/2021"),
+                        DateTime.ParseExact("7/10/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2903,8 +2847,7 @@ namespace ToolsBazaar.Persistence
                     Id = 59,
                     Customer = GetCustomerById(83),
                     Date =
-                        DateTime
-                           .Parse("7/19/2021"),
+                        DateTime.ParseExact("7/19/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2931,8 +2874,7 @@ namespace ToolsBazaar.Persistence
                     Id = 60,
                     Customer = GetCustomerById(87),
                     Date =
-                        DateTime
-                           .Parse("3/8/2021"),
+                        DateTime.ParseExact("3/8/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2951,8 +2893,7 @@ namespace ToolsBazaar.Persistence
                     Id = 61,
                     Customer = GetCustomerById(41),
                     Date =
-                        DateTime
-                           .Parse("2/12/2011"),
+                        DateTime.ParseExact("2/12/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -2979,8 +2920,7 @@ namespace ToolsBazaar.Persistence
                     Id = 62,
                     Customer = GetCustomerById(3),
                     Date =
-                        DateTime
-                           .Parse("11/16/2012"),
+                        DateTime.ParseExact("11/16/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3007,8 +2947,7 @@ namespace ToolsBazaar.Persistence
                     Id = 63,
                     Customer = GetCustomerById(49),
                     Date =
-                        DateTime
-                           .Parse("3/1/2014"),
+                        DateTime.ParseExact("3/1/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3035,8 +2974,7 @@ namespace ToolsBazaar.Persistence
                     Id = 64,
                     Customer = GetCustomerById(17),
                     Date =
-                        DateTime
-                           .Parse("4/28/2018"),
+                        DateTime.ParseExact("4/28/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3095,8 +3033,7 @@ namespace ToolsBazaar.Persistence
                     Id = 65,
                     Customer = GetCustomerById(35),
                     Date =
-                        DateTime
-                           .Parse("3/17/2021"),
+                        DateTime.ParseExact("3/17/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3139,8 +3076,7 @@ namespace ToolsBazaar.Persistence
                     Id = 66,
                     Customer = GetCustomerById(97),
                     Date =
-                        DateTime
-                           .Parse("10/17/2018"),
+                        DateTime.ParseExact("10/17/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3191,8 +3127,7 @@ namespace ToolsBazaar.Persistence
                     Id = 67,
                     Customer = GetCustomerById(25),
                     Date =
-                        DateTime
-                           .Parse("6/30/2022"),
+                        DateTime.ParseExact("6/30/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3227,8 +3162,7 @@ namespace ToolsBazaar.Persistence
                     Id = 68,
                     Customer = GetCustomerById(9),
                     Date =
-                        DateTime
-                           .Parse("9/4/2019"),
+                        DateTime.ParseExact("9/4/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3247,8 +3181,7 @@ namespace ToolsBazaar.Persistence
                     Id = 69,
                     Customer = GetCustomerById(93),
                     Date =
-                        DateTime
-                           .Parse("6/8/2022"),
+                        DateTime.ParseExact("6/8/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3283,8 +3216,7 @@ namespace ToolsBazaar.Persistence
                     Id = 70,
                     Customer = GetCustomerById(21),
                     Date =
-                        DateTime
-                           .Parse("5/25/2011"),
+                        DateTime.ParseExact("5/25/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3303,8 +3235,7 @@ namespace ToolsBazaar.Persistence
                     Id = 71,
                     Customer = GetCustomerById(13),
                     Date =
-                        DateTime
-                           .Parse("4/30/2015"),
+                        DateTime.ParseExact("4/30/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3355,8 +3286,7 @@ namespace ToolsBazaar.Persistence
                     Id = 72,
                     Customer = GetCustomerById(5),
                     Date =
-                        DateTime
-                           .Parse("5/16/2020"),
+                        DateTime.ParseExact("5/16/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3423,8 +3353,7 @@ namespace ToolsBazaar.Persistence
                     Id = 73,
                     Customer = GetCustomerById(33),
                     Date =
-                        DateTime
-                           .Parse("12/11/2021"),
+                        DateTime.ParseExact("12/11/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3491,8 +3420,7 @@ namespace ToolsBazaar.Persistence
                     Id = 74,
                     Customer = GetCustomerById(13),
                     Date =
-                        DateTime
-                           .Parse("3/5/2017"),
+                        DateTime.ParseExact("3/5/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3527,8 +3455,7 @@ namespace ToolsBazaar.Persistence
                     Id = 75,
                     Customer = GetCustomerById(43),
                     Date =
-                        DateTime
-                           .Parse("1/24/2021"),
+                        DateTime.ParseExact("1/24/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3555,8 +3482,7 @@ namespace ToolsBazaar.Persistence
                     Id = 76,
                     Customer = GetCustomerById(25),
                     Date =
-                        DateTime
-                           .Parse("10/25/2016"),
+                        DateTime.ParseExact("10/25/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3591,8 +3517,7 @@ namespace ToolsBazaar.Persistence
                     Id = 77,
                     Customer = GetCustomerById(1),
                     Date =
-                        DateTime
-                           .Parse("8/17/2016"),
+                        DateTime.ParseExact("8/17/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3635,8 +3560,7 @@ namespace ToolsBazaar.Persistence
                     Id = 78,
                     Customer = GetCustomerById(5),
                     Date =
-                        DateTime
-                           .Parse("3/15/2011"),
+                        DateTime.ParseExact("3/15/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3695,8 +3619,7 @@ namespace ToolsBazaar.Persistence
                     Id = 79,
                     Customer = GetCustomerById(55),
                     Date =
-                        DateTime
-                           .Parse("10/17/2022"),
+                        DateTime.ParseExact("10/17/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3731,8 +3654,7 @@ namespace ToolsBazaar.Persistence
                     Id = 80,
                     Customer = GetCustomerById(11),
                     Date =
-                        DateTime
-                           .Parse("6/15/2015"),
+                        DateTime.ParseExact("6/15/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3775,8 +3697,7 @@ namespace ToolsBazaar.Persistence
                     Id = 81,
                     Customer = GetCustomerById(35),
                     Date =
-                        DateTime
-                           .Parse("8/2/2015"),
+                        DateTime.ParseExact("8/2/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3827,8 +3748,7 @@ namespace ToolsBazaar.Persistence
                     Id = 82,
                     Customer = GetCustomerById(23),
                     Date =
-                        DateTime
-                           .Parse("2/12/2016"),
+                        DateTime.ParseExact("2/12/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3855,8 +3775,7 @@ namespace ToolsBazaar.Persistence
                     Id = 83,
                     Customer = GetCustomerById(57),
                     Date =
-                        DateTime
-                           .Parse("10/19/2011"),
+                        DateTime.ParseExact("10/19/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3915,8 +3834,7 @@ namespace ToolsBazaar.Persistence
                     Id = 84,
                     Customer = GetCustomerById(83),
                     Date =
-                        DateTime
-                           .Parse("12/2/2022"),
+                        DateTime.ParseExact("12/2/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -3983,8 +3901,7 @@ namespace ToolsBazaar.Persistence
                     Id = 85,
                     Customer = GetCustomerById(11),
                     Date =
-                        DateTime
-                           .Parse("7/31/2011"),
+                        DateTime.ParseExact("7/31/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4035,8 +3952,7 @@ namespace ToolsBazaar.Persistence
                     Id = 86,
                     Customer = GetCustomerById(61),
                     Date =
-                        DateTime
-                           .Parse("3/1/2011"),
+                        DateTime.ParseExact("3/1/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4063,8 +3979,7 @@ namespace ToolsBazaar.Persistence
                     Id = 87,
                     Customer = GetCustomerById(55),
                     Date =
-                        DateTime
-                           .Parse("10/2/2021"),
+                        DateTime.ParseExact("10/2/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4115,8 +4030,7 @@ namespace ToolsBazaar.Persistence
                     Id = 88,
                     Customer = GetCustomerById(63),
                     Date =
-                        DateTime
-                           .Parse("11/11/2021"),
+                        DateTime.ParseExact("11/11/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4143,8 +4057,7 @@ namespace ToolsBazaar.Persistence
                     Id = 89,
                     Customer = GetCustomerById(69),
                     Date =
-                        DateTime
-                           .Parse("2/9/2020"),
+                        DateTime.ParseExact("2/9/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4171,8 +4084,7 @@ namespace ToolsBazaar.Persistence
                     Id = 90,
                     Customer = GetCustomerById(79),
                     Date =
-                        DateTime
-                           .Parse("9/26/2019"),
+                        DateTime.ParseExact("9/26/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4223,8 +4135,7 @@ namespace ToolsBazaar.Persistence
                     Id = 91,
                     Customer = GetCustomerById(63),
                     Date =
-                        DateTime
-                           .Parse("1/2/2022"),
+                        DateTime.ParseExact("1/2/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4251,8 +4162,7 @@ namespace ToolsBazaar.Persistence
                     Id = 92,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("11/4/2022"),
+                        DateTime.ParseExact("11/4/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4303,8 +4213,7 @@ namespace ToolsBazaar.Persistence
                     Id = 93,
                     Customer = GetCustomerById(67),
                     Date =
-                        DateTime
-                           .Parse("2/6/2015"),
+                        DateTime.ParseExact("2/6/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4339,8 +4248,7 @@ namespace ToolsBazaar.Persistence
                     Id = 94,
                     Customer = GetCustomerById(51),
                     Date =
-                        DateTime
-                           .Parse("5/29/2017"),
+                        DateTime.ParseExact("5/29/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4391,8 +4299,7 @@ namespace ToolsBazaar.Persistence
                     Id = 95,
                     Customer = GetCustomerById(71),
                     Date =
-                        DateTime
-                           .Parse("1/5/2021"),
+                        DateTime.ParseExact("1/5/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4427,8 +4334,7 @@ namespace ToolsBazaar.Persistence
                     Id = 96,
                     Customer = GetCustomerById(3),
                     Date =
-                        DateTime
-                           .Parse("3/25/2015"),
+                        DateTime.ParseExact("3/25/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4471,8 +4377,7 @@ namespace ToolsBazaar.Persistence
                     Id = 97,
                     Customer = GetCustomerById(47),
                     Date =
-                        DateTime
-                           .Parse("11/11/2015"),
+                        DateTime.ParseExact("11/11/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4539,8 +4444,7 @@ namespace ToolsBazaar.Persistence
                     Id = 98,
                     Customer = GetCustomerById(27),
                     Date =
-                        DateTime
-                           .Parse("9/26/2016"),
+                        DateTime.ParseExact("9/26/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4567,8 +4471,7 @@ namespace ToolsBazaar.Persistence
                     Id = 99,
                     Customer = GetCustomerById(19),
                     Date =
-                        DateTime
-                           .Parse("5/6/2017"),
+                        DateTime.ParseExact("5/6/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4595,8 +4498,7 @@ namespace ToolsBazaar.Persistence
                     Id = 100,
                     Customer = GetCustomerById(39),
                     Date =
-                        DateTime
-                           .Parse("6/3/2021"),
+                        DateTime.ParseExact("6/3/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4631,8 +4533,7 @@ namespace ToolsBazaar.Persistence
                     Id = 101,
                     Customer = GetCustomerById(63),
                     Date =
-                        DateTime
-                           .Parse("10/20/2017"),
+                        DateTime.ParseExact("10/20/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4675,8 +4576,7 @@ namespace ToolsBazaar.Persistence
                     Id = 102,
                     Customer = GetCustomerById(27),
                     Date =
-                        DateTime
-                           .Parse("6/10/2021"),
+                        DateTime.ParseExact("6/10/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4711,8 +4611,7 @@ namespace ToolsBazaar.Persistence
                     Id = 103,
                     Customer = GetCustomerById(49),
                     Date =
-                        DateTime
-                           .Parse("9/16/2011"),
+                        DateTime.ParseExact("9/16/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4747,8 +4646,7 @@ namespace ToolsBazaar.Persistence
                     Id = 103,
                     Customer = GetCustomerById(49),
                     Date =
-                        DateTime
-                           .Parse("12/31/2022"),
+                        DateTime.ParseExact("12/31/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4783,8 +4681,7 @@ namespace ToolsBazaar.Persistence
                     Id = 104,
                     Customer = GetCustomerById(3),
                     Date =
-                        DateTime
-                           .Parse("3/7/2016"),
+                        DateTime.ParseExact("3/7/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4851,8 +4748,7 @@ namespace ToolsBazaar.Persistence
                     Id = 105,
                     Customer = GetCustomerById(67),
                     Date =
-                        DateTime
-                           .Parse("7/16/2021"),
+                        DateTime.ParseExact("7/16/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4919,8 +4815,7 @@ namespace ToolsBazaar.Persistence
                     Id = 106,
                     Customer = GetCustomerById(19),
                     Date =
-                        DateTime
-                           .Parse("5/28/2022"),
+                        DateTime.ParseExact("5/28/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4939,8 +4834,7 @@ namespace ToolsBazaar.Persistence
                     Id = 107,
                     Customer = GetCustomerById(3),
                     Date =
-                        DateTime
-                           .Parse("10/1/2021"),
+                        DateTime.ParseExact("10/1/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -4999,8 +4893,7 @@ namespace ToolsBazaar.Persistence
                     Id = 108,
                     Customer = GetCustomerById(23),
                     Date =
-                        DateTime
-                           .Parse("2/16/2021"),
+                        DateTime.ParseExact("2/16/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5027,8 +4920,7 @@ namespace ToolsBazaar.Persistence
                     Id = 109,
                     Customer = GetCustomerById(53),
                     Date =
-                        DateTime
-                           .Parse("12/29/2021"),
+                        DateTime.ParseExact("12/29/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5063,8 +4955,7 @@ namespace ToolsBazaar.Persistence
                     Id = 110,
                     Customer = GetCustomerById(49),
                     Date =
-                        DateTime
-                           .Parse("9/7/2012"),
+                        DateTime.ParseExact("9/7/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5139,8 +5030,7 @@ namespace ToolsBazaar.Persistence
                     Id = 111,
                     Customer = GetCustomerById(19),
                     Date =
-                        DateTime
-                           .Parse("9/21/2017"),
+                        DateTime.ParseExact("9/21/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5175,8 +5065,7 @@ namespace ToolsBazaar.Persistence
                     Id = 112,
                     Customer = GetCustomerById(55),
                     Date =
-                        DateTime
-                           .Parse("3/25/2014"),
+                        DateTime.ParseExact("3/25/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5195,8 +5084,7 @@ namespace ToolsBazaar.Persistence
                     Id = 113,
                     Customer = GetCustomerById(91),
                     Date =
-                        DateTime
-                           .Parse("9/4/2011"),
+                        DateTime.ParseExact("9/4/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5239,8 +5127,7 @@ namespace ToolsBazaar.Persistence
                     Id = 114,
                     Customer = GetCustomerById(89),
                     Date =
-                        DateTime
-                           .Parse("9/18/2016"),
+                        DateTime.ParseExact("9/18/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5283,8 +5170,7 @@ namespace ToolsBazaar.Persistence
                     Id = 115,
                     Customer = GetCustomerById(75),
                     Date =
-                        DateTime
-                           .Parse("7/23/2010"),
+                        DateTime.ParseExact("7/23/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5327,8 +5213,7 @@ namespace ToolsBazaar.Persistence
                     Id = 116,
                     Customer = GetCustomerById(89),
                     Date =
-                        DateTime
-                           .Parse("11/24/2021"),
+                        DateTime.ParseExact("11/24/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5395,8 +5280,7 @@ namespace ToolsBazaar.Persistence
                     Id = 117,
                     Customer = GetCustomerById(51),
                     Date =
-                        DateTime
-                           .Parse("10/26/2014"),
+                        DateTime.ParseExact("10/26/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5463,8 +5347,7 @@ namespace ToolsBazaar.Persistence
                     Id = 118,
                     Customer = GetCustomerById(71),
                     Date =
-                        DateTime
-                           .Parse("7/6/2021"),
+                        DateTime.ParseExact("7/6/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5483,8 +5366,7 @@ namespace ToolsBazaar.Persistence
                     Id = 119,
                     Customer = GetCustomerById(35),
                     Date =
-                        DateTime
-                           .Parse("9/27/2022"),
+                        DateTime.ParseExact("9/27/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5535,8 +5417,7 @@ namespace ToolsBazaar.Persistence
                     Id = 120,
                     Customer = GetCustomerById(65),
                     Date =
-                        DateTime
-                           .Parse("6/25/2021"),
+                        DateTime.ParseExact("6/25/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5579,8 +5460,7 @@ namespace ToolsBazaar.Persistence
                     Id = 121,
                     Customer = GetCustomerById(41),
                     Date =
-                        DateTime
-                           .Parse("12/8/2016"),
+                        DateTime.ParseExact("12/8/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5639,8 +5519,7 @@ namespace ToolsBazaar.Persistence
                     Id = 122,
                     Customer = GetCustomerById(85),
                     Date =
-                        DateTime
-                           .Parse("8/5/2021"),
+                        DateTime.ParseExact("8/5/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5675,8 +5554,7 @@ namespace ToolsBazaar.Persistence
                     Id = 123,
                     Customer = GetCustomerById(71),
                     Date =
-                        DateTime
-                           .Parse("7/2/2021"),
+                        DateTime.ParseExact("7/2/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5711,8 +5589,7 @@ namespace ToolsBazaar.Persistence
                     Id = 124,
                     Customer = GetCustomerById(79),
                     Date =
-                        DateTime
-                           .Parse("9/5/2013"),
+                        DateTime.ParseExact("9/5/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5731,8 +5608,7 @@ namespace ToolsBazaar.Persistence
                     Id = 125,
                     Customer = GetCustomerById(41),
                     Date =
-                        DateTime
-                           .Parse("8/30/2010"),
+                        DateTime.ParseExact("8/30/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5751,8 +5627,7 @@ namespace ToolsBazaar.Persistence
                     Id = 126,
                     Customer = GetCustomerById(1),
                     Date =
-                        DateTime
-                           .Parse("12/16/2017"),
+                        DateTime.ParseExact("12/16/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5787,8 +5662,7 @@ namespace ToolsBazaar.Persistence
                     Id = 127,
                     Customer = GetCustomerById(13),
                     Date =
-                        DateTime
-                           .Parse("3/18/2015"),
+                        DateTime.ParseExact("3/18/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5823,8 +5697,7 @@ namespace ToolsBazaar.Persistence
                     Id = 128,
                     Customer = GetCustomerById(25),
                     Date =
-                        DateTime
-                           .Parse("12/13/2021"),
+                        DateTime.ParseExact("12/13/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5851,8 +5724,7 @@ namespace ToolsBazaar.Persistence
                     Id = 129,
                     Customer = GetCustomerById(21),
                     Date =
-                        DateTime
-                           .Parse("10/13/2022"),
+                        DateTime.ParseExact("10/13/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5871,8 +5743,7 @@ namespace ToolsBazaar.Persistence
                     Id = 130,
                     Customer = GetCustomerById(97),
                     Date =
-                        DateTime
-                           .Parse("6/16/2016"),
+                        DateTime.ParseExact("6/16/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5907,8 +5778,7 @@ namespace ToolsBazaar.Persistence
                     Id = 131,
                     Customer = GetCustomerById(65),
                     Date =
-                        DateTime
-                           .Parse("1/23/2011"),
+                        DateTime.ParseExact("1/23/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -5943,8 +5813,7 @@ namespace ToolsBazaar.Persistence
                     Id = 132,
                     Customer = GetCustomerById(17),
                     Date =
-                        DateTime
-                           .Parse("6/19/2022"),
+                        DateTime.ParseExact("6/19/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6003,8 +5872,7 @@ namespace ToolsBazaar.Persistence
                     Id = 133,
                     Customer = GetCustomerById(39),
                     Date =
-                        DateTime
-                           .Parse("2/8/2011"),
+                        DateTime.ParseExact("2/8/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6039,8 +5907,7 @@ namespace ToolsBazaar.Persistence
                     Id = 134,
                     Customer = GetCustomerById(71),
                     Date =
-                        DateTime
-                           .Parse("10/21/2018"),
+                        DateTime.ParseExact("10/21/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6075,8 +5942,7 @@ namespace ToolsBazaar.Persistence
                     Id = 135,
                     Customer = GetCustomerById(71),
                     Date =
-                        DateTime
-                           .Parse("2/13/2021"),
+                        DateTime.ParseExact("2/13/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6103,8 +5969,7 @@ namespace ToolsBazaar.Persistence
                     Id = 136,
                     Customer = GetCustomerById(49),
                     Date =
-                        DateTime
-                           .Parse("6/5/2021"),
+                        DateTime.ParseExact("6/5/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6163,8 +6028,7 @@ namespace ToolsBazaar.Persistence
                     Id = 137,
                     Customer = GetCustomerById(99),
                     Date =
-                        DateTime
-                           .Parse("4/28/2021"),
+                        DateTime.ParseExact("4/28/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6239,8 +6103,7 @@ namespace ToolsBazaar.Persistence
                     Id = 138,
                     Customer = GetCustomerById(35),
                     Date =
-                        DateTime
-                           .Parse("6/2/2018"),
+                        DateTime.ParseExact("6/2/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6299,8 +6162,7 @@ namespace ToolsBazaar.Persistence
                     Id = 139,
                     Customer = GetCustomerById(91),
                     Date =
-                        DateTime
-                           .Parse("11/19/2021"),
+                        DateTime.ParseExact("11/19/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6319,8 +6181,7 @@ namespace ToolsBazaar.Persistence
                     Id = 140,
                     Customer = GetCustomerById(33),
                     Date =
-                        DateTime
-                           .Parse("10/21/2021"),
+                        DateTime.ParseExact("10/21/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6363,8 +6224,7 @@ namespace ToolsBazaar.Persistence
                     Id = 141,
                     Customer = GetCustomerById(85),
                     Date =
-                        DateTime
-                           .Parse("11/4/2021"),
+                        DateTime.ParseExact("11/4/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6431,8 +6291,7 @@ namespace ToolsBazaar.Persistence
                     Id = 142,
                     Customer = GetCustomerById(65),
                     Date =
-                        DateTime
-                           .Parse("6/17/2015"),
+                        DateTime.ParseExact("6/17/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6459,8 +6318,7 @@ namespace ToolsBazaar.Persistence
                     Id = 143,
                     Customer = GetCustomerById(15),
                     Date =
-                        DateTime
-                           .Parse("1/13/2021"),
+                        DateTime.ParseExact("1/13/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6487,8 +6345,7 @@ namespace ToolsBazaar.Persistence
                     Id = 144,
                     Customer = GetCustomerById(13),
                     Date =
-                        DateTime
-                           .Parse("10/3/2013"),
+                        DateTime.ParseExact("10/3/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6515,8 +6372,7 @@ namespace ToolsBazaar.Persistence
                     Id = 145,
                     Customer = GetCustomerById(63),
                     Date =
-                        DateTime
-                           .Parse("2/20/2014"),
+                        DateTime.ParseExact("2/20/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6591,8 +6447,7 @@ namespace ToolsBazaar.Persistence
                     Id = 146,
                     Customer = GetCustomerById(47),
                     Date =
-                        DateTime
-                           .Parse("6/27/2017"),
+                        DateTime.ParseExact("6/27/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6651,8 +6506,7 @@ namespace ToolsBazaar.Persistence
                     Id = 147,
                     Customer = GetCustomerById(73),
                     Date =
-                        DateTime
-                           .Parse("4/25/2021"),
+                        DateTime.ParseExact("4/25/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6679,8 +6533,7 @@ namespace ToolsBazaar.Persistence
                     Id = 148,
                     Customer = GetCustomerById(53),
                     Date =
-                        DateTime
-                           .Parse("8/27/2021"),
+                        DateTime.ParseExact("8/27/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6699,8 +6552,7 @@ namespace ToolsBazaar.Persistence
                     Id = 149,
                     Customer = GetCustomerById(31),
                     Date =
-                        DateTime
-                           .Parse("7/8/2020"),
+                        DateTime.ParseExact("7/8/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6735,8 +6587,7 @@ namespace ToolsBazaar.Persistence
                     Id = 150,
                     Customer = GetCustomerById(65),
                     Date =
-                        DateTime
-                           .Parse("9/24/2021"),
+                        DateTime.ParseExact("9/24/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6771,8 +6622,7 @@ namespace ToolsBazaar.Persistence
                     Id = 151,
                     Customer = GetCustomerById(13),
                     Date =
-                        DateTime
-                           .Parse("1/14/2022"),
+                        DateTime.ParseExact("1/14/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6791,8 +6641,7 @@ namespace ToolsBazaar.Persistence
                     Id = 152,
                     Customer = GetCustomerById(21),
                     Date =
-                        DateTime
-                           .Parse("10/28/2011"),
+                        DateTime.ParseExact("10/28/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6811,8 +6660,7 @@ namespace ToolsBazaar.Persistence
                     Id = 153,
                     Customer = GetCustomerById(99),
                     Date =
-                        DateTime
-                           .Parse("12/14/2011"),
+                        DateTime.ParseExact("12/14/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6863,8 +6711,7 @@ namespace ToolsBazaar.Persistence
                     Id = 154,
                     Customer = GetCustomerById(51),
                     Date =
-                        DateTime
-                           .Parse("9/28/2021"),
+                        DateTime.ParseExact("9/28/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6923,8 +6770,7 @@ namespace ToolsBazaar.Persistence
                     Id = 155,
                     Customer = GetCustomerById(45),
                     Date =
-                        DateTime
-                           .Parse("5/25/2012"),
+                        DateTime.ParseExact("5/25/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -6959,8 +6805,7 @@ namespace ToolsBazaar.Persistence
                     Id = 156,
                     Customer = GetCustomerById(45),
                     Date =
-                        DateTime
-                           .Parse("11/11/2011"),
+                        DateTime.ParseExact("11/11/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7003,8 +6848,7 @@ namespace ToolsBazaar.Persistence
                     Id = 157,
                     Customer = GetCustomerById(75),
                     Date =
-                        DateTime
-                           .Parse("2/14/2018"),
+                        DateTime.ParseExact("2/14/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7023,8 +6867,7 @@ namespace ToolsBazaar.Persistence
                     Id = 158,
                     Customer = GetCustomerById(53),
                     Date =
-                        DateTime
-                           .Parse("7/10/2022"),
+                        DateTime.ParseExact("7/10/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7059,8 +6902,7 @@ namespace ToolsBazaar.Persistence
                     Id = 159,
                     Customer = GetCustomerById(95),
                     Date =
-                        DateTime
-                           .Parse("1/5/2014"),
+                        DateTime.ParseExact("1/5/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7087,8 +6929,7 @@ namespace ToolsBazaar.Persistence
                     Id = 160,
                     Customer = GetCustomerById(11),
                     Date =
-                        DateTime
-                           .Parse("2/9/2014"),
+                        DateTime.ParseExact("2/9/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7107,8 +6948,7 @@ namespace ToolsBazaar.Persistence
                     Id = 161,
                     Customer = GetCustomerById(59),
                     Date =
-                        DateTime
-                           .Parse("10/12/2019"),
+                        DateTime.ParseExact("10/12/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7151,8 +6991,7 @@ namespace ToolsBazaar.Persistence
                     Id = 162,
                     Customer = GetCustomerById(9),
                     Date =
-                        DateTime
-                           .Parse("12/12/2017"),
+                        DateTime.ParseExact("12/12/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7171,8 +7010,7 @@ namespace ToolsBazaar.Persistence
                     Id = 163,
                     Customer = GetCustomerById(37),
                     Date =
-                        DateTime
-                           .Parse("6/8/2010"),
+                        DateTime.ParseExact("6/8/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7255,8 +7093,7 @@ namespace ToolsBazaar.Persistence
                     Id = 164,
                     Customer = GetCustomerById(19),
                     Date =
-                        DateTime
-                           .Parse("8/14/2017"),
+                        DateTime.ParseExact("8/14/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7307,8 +7144,7 @@ namespace ToolsBazaar.Persistence
                     Id = 165,
                     Customer = GetCustomerById(1),
                     Date =
-                        DateTime
-                           .Parse("8/30/2017"),
+                        DateTime.ParseExact("8/30/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7335,8 +7171,7 @@ namespace ToolsBazaar.Persistence
                     Id = 166,
                     Customer = GetCustomerById(93),
                     Date =
-                        DateTime
-                           .Parse("2/10/2016"),
+                        DateTime.ParseExact("2/10/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7387,8 +7222,7 @@ namespace ToolsBazaar.Persistence
                     Id = 167,
                     Customer = GetCustomerById(95),
                     Date =
-                        DateTime
-                           .Parse("6/17/2017"),
+                        DateTime.ParseExact("6/17/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7415,8 +7249,7 @@ namespace ToolsBazaar.Persistence
                     Id = 168,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("7/30/2017"),
+                        DateTime.ParseExact("7/30/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7475,8 +7308,7 @@ namespace ToolsBazaar.Persistence
                     Id = 169,
                     Customer = GetCustomerById(25),
                     Date =
-                        DateTime
-                           .Parse("6/26/2021"),
+                        DateTime.ParseExact("6/26/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7535,8 +7367,7 @@ namespace ToolsBazaar.Persistence
                     Id = 170,
                     Customer = GetCustomerById(23),
                     Date =
-                        DateTime
-                           .Parse("1/29/2013"),
+                        DateTime.ParseExact("1/29/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7571,8 +7402,7 @@ namespace ToolsBazaar.Persistence
                     Id = 171,
                     Customer = GetCustomerById(75),
                     Date =
-                        DateTime
-                           .Parse("10/14/2021"),
+                        DateTime.ParseExact("10/14/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7591,8 +7421,7 @@ namespace ToolsBazaar.Persistence
                     Id = 172,
                     Customer = GetCustomerById(7),
                     Date =
-                        DateTime
-                           .Parse("11/27/2022"),
+                        DateTime.ParseExact("11/27/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7651,8 +7480,7 @@ namespace ToolsBazaar.Persistence
                     Id = 173,
                     Customer = GetCustomerById(69),
                     Date =
-                        DateTime
-                           .Parse("3/19/2014"),
+                        DateTime.ParseExact("3/19/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7711,8 +7539,7 @@ namespace ToolsBazaar.Persistence
                     Id = 174,
                     Customer = GetCustomerById(55),
                     Date =
-                        DateTime
-                           .Parse("6/18/2018"),
+                        DateTime.ParseExact("6/18/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7771,8 +7598,7 @@ namespace ToolsBazaar.Persistence
                     Id = 175,
                     Customer = GetCustomerById(71),
                     Date =
-                        DateTime
-                           .Parse("11/17/2012"),
+                        DateTime.ParseExact("11/17/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7855,8 +7681,7 @@ namespace ToolsBazaar.Persistence
                     Id = 176,
                     Customer = GetCustomerById(91),
                     Date =
-                        DateTime
-                           .Parse("10/4/2017"),
+                        DateTime.ParseExact("10/4/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7883,8 +7708,7 @@ namespace ToolsBazaar.Persistence
                     Id = 177,
                     Customer = GetCustomerById(59),
                     Date =
-                        DateTime
-                           .Parse("7/7/2021"),
+                        DateTime.ParseExact("7/7/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7903,8 +7727,7 @@ namespace ToolsBazaar.Persistence
                     Id = 178,
                     Customer = GetCustomerById(41),
                     Date =
-                        DateTime
-                           .Parse("4/2/2014"),
+                        DateTime.ParseExact("4/2/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -7955,8 +7778,7 @@ namespace ToolsBazaar.Persistence
                     Id = 179,
                     Customer = GetCustomerById(65),
                     Date =
-                        DateTime
-                           .Parse("4/28/2014"),
+                        DateTime.ParseExact("4/28/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8023,8 +7845,7 @@ namespace ToolsBazaar.Persistence
                     Id = 180,
                     Customer = GetCustomerById(69),
                     Date =
-                        DateTime
-                           .Parse("12/12/2021"),
+                        DateTime.ParseExact("12/12/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8075,8 +7896,7 @@ namespace ToolsBazaar.Persistence
                     Id = 181,
                     Customer = GetCustomerById(9),
                     Date =
-                        DateTime
-                           .Parse("11/18/2020"),
+                        DateTime.ParseExact("11/18/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8103,8 +7923,7 @@ namespace ToolsBazaar.Persistence
                     Id = 182,
                     Customer = GetCustomerById(75),
                     Date =
-                        DateTime
-                           .Parse("6/24/2017"),
+                        DateTime.ParseExact("6/24/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8147,8 +7966,7 @@ namespace ToolsBazaar.Persistence
                     Id = 183,
                     Customer = GetCustomerById(79),
                     Date =
-                        DateTime
-                           .Parse("10/20/2021"),
+                        DateTime.ParseExact("10/20/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8199,8 +8017,7 @@ namespace ToolsBazaar.Persistence
                     Id = 184,
                     Customer = GetCustomerById(61),
                     Date =
-                        DateTime
-                           .Parse("5/2/2011"),
+                        DateTime.ParseExact("5/2/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8227,8 +8044,7 @@ namespace ToolsBazaar.Persistence
                     Id = 185,
                     Customer = GetCustomerById(71),
                     Date =
-                        DateTime
-                           .Parse("12/18/2011"),
+                        DateTime.ParseExact("12/18/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8287,8 +8103,7 @@ namespace ToolsBazaar.Persistence
                     Id = 186,
                     Customer = GetCustomerById(21),
                     Date =
-                        DateTime
-                           .Parse("9/23/2021"),
+                        DateTime.ParseExact("9/23/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8347,8 +8162,7 @@ namespace ToolsBazaar.Persistence
                     Id = 187,
                     Customer = GetCustomerById(43),
                     Date =
-                        DateTime
-                           .Parse("2/1/2011"),
+                        DateTime.ParseExact("2/1/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8367,8 +8181,7 @@ namespace ToolsBazaar.Persistence
                     Id = 188,
                     Customer = GetCustomerById(71),
                     Date =
-                        DateTime
-                           .Parse("12/26/2013"),
+                        DateTime.ParseExact("12/26/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8435,8 +8248,7 @@ namespace ToolsBazaar.Persistence
                     Id = 189,
                     Customer = GetCustomerById(93),
                     Date =
-                        DateTime
-                           .Parse("6/26/2017"),
+                        DateTime.ParseExact("6/26/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8519,8 +8331,7 @@ namespace ToolsBazaar.Persistence
                     Id = 190,
                     Customer = GetCustomerById(21),
                     Date =
-                        DateTime
-                           .Parse("11/6/2012"),
+                        DateTime.ParseExact("11/6/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8579,8 +8390,7 @@ namespace ToolsBazaar.Persistence
                     Id = 191,
                     Customer = GetCustomerById(99),
                     Date =
-                        DateTime
-                           .Parse("1/29/2013"),
+                        DateTime.ParseExact("1/29/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8615,8 +8425,7 @@ namespace ToolsBazaar.Persistence
                     Id = 192,
                     Customer = GetCustomerById(15),
                     Date =
-                        DateTime
-                           .Parse("6/24/2016"),
+                        DateTime.ParseExact("6/24/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8683,8 +8492,7 @@ namespace ToolsBazaar.Persistence
                     Id = 193,
                     Customer = GetCustomerById(21),
                     Date =
-                        DateTime
-                           .Parse("7/6/2015"),
+                        DateTime.ParseExact("7/6/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8703,8 +8511,7 @@ namespace ToolsBazaar.Persistence
                     Id = 194,
                     Customer = GetCustomerById(45),
                     Date =
-                        DateTime
-                           .Parse("2/19/2016"),
+                        DateTime.ParseExact("2/19/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8731,8 +8538,7 @@ namespace ToolsBazaar.Persistence
                     Id = 195,
                     Customer = GetCustomerById(27),
                     Date =
-                        DateTime
-                           .Parse("2/12/2011"),
+                        DateTime.ParseExact("2/12/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8767,8 +8573,7 @@ namespace ToolsBazaar.Persistence
                     Id = 196,
                     Customer = GetCustomerById(5),
                     Date =
-                        DateTime
-                           .Parse("12/16/2016"),
+                        DateTime.ParseExact("12/16/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8827,8 +8632,7 @@ namespace ToolsBazaar.Persistence
                     Id = 197,
                     Customer = GetCustomerById(77),
                     Date =
-                        DateTime
-                           .Parse("5/9/2021"),
+                        DateTime.ParseExact("5/9/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8847,8 +8651,7 @@ namespace ToolsBazaar.Persistence
                     Id = 198,
                     Customer = GetCustomerById(53),
                     Date =
-                        DateTime
-                           .Parse("10/18/2015"),
+                        DateTime.ParseExact("10/18/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8867,8 +8670,7 @@ namespace ToolsBazaar.Persistence
                     Id = 199,
                     Customer = GetCustomerById(93),
                     Date =
-                        DateTime
-                           .Parse("6/6/2016"),
+                        DateTime.ParseExact("6/6/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8903,8 +8705,7 @@ namespace ToolsBazaar.Persistence
                     Id = 200,
                     Customer = GetCustomerById(75),
                     Date =
-                        DateTime
-                           .Parse("3/29/2012"),
+                        DateTime.ParseExact("3/29/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8955,8 +8756,7 @@ namespace ToolsBazaar.Persistence
                     Id = 201,
                     Customer = GetCustomerById(53),
                     Date =
-                        DateTime
-                           .Parse("4/3/2016"),
+                        DateTime.ParseExact("4/3/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -8999,8 +8799,7 @@ namespace ToolsBazaar.Persistence
                     Id = 202,
                     Customer = GetCustomerById(77),
                     Date =
-                        DateTime
-                           .Parse("1/15/2010"),
+                        DateTime.ParseExact("1/15/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9051,8 +8850,7 @@ namespace ToolsBazaar.Persistence
                     Id = 203,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("3/19/2014"),
+                        DateTime.ParseExact("3/19/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9087,8 +8885,7 @@ namespace ToolsBazaar.Persistence
                     Id = 204,
                     Customer = GetCustomerById(35),
                     Date =
-                        DateTime
-                           .Parse("8/12/2017"),
+                        DateTime.ParseExact("8/12/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9123,8 +8920,7 @@ namespace ToolsBazaar.Persistence
                     Id = 205,
                     Customer = GetCustomerById(13),
                     Date =
-                        DateTime
-                           .Parse("6/15/2011"),
+                        DateTime.ParseExact("6/15/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9175,8 +8971,7 @@ namespace ToolsBazaar.Persistence
                     Id = 206,
                     Customer = GetCustomerById(41),
                     Date =
-                        DateTime
-                           .Parse("4/25/2018"),
+                        DateTime.ParseExact("4/25/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9219,8 +9014,7 @@ namespace ToolsBazaar.Persistence
                     Id = 207,
                     Customer = GetCustomerById(87),
                     Date =
-                        DateTime
-                           .Parse("3/20/2015"),
+                        DateTime.ParseExact("3/20/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9247,8 +9041,7 @@ namespace ToolsBazaar.Persistence
                     Id = 208,
                     Customer = GetCustomerById(49),
                     Date =
-                        DateTime
-                           .Parse("1/31/2012"),
+                        DateTime.ParseExact("1/31/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9291,8 +9084,7 @@ namespace ToolsBazaar.Persistence
                     Id = 209,
                     Customer = GetCustomerById(1),
                     Date =
-                        DateTime
-                           .Parse("3/31/2011"),
+                        DateTime.ParseExact("3/31/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9335,8 +9127,7 @@ namespace ToolsBazaar.Persistence
                     Id = 210,
                     Customer = GetCustomerById(63),
                     Date =
-                        DateTime
-                           .Parse("7/30/2022"),
+                        DateTime.ParseExact("7/30/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9379,8 +9170,7 @@ namespace ToolsBazaar.Persistence
                     Id = 211,
                     Customer = GetCustomerById(5),
                     Date =
-                        DateTime
-                           .Parse("10/12/2020"),
+                        DateTime.ParseExact("10/12/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9423,8 +9213,7 @@ namespace ToolsBazaar.Persistence
                     Id = 212,
                     Customer = GetCustomerById(7),
                     Date =
-                        DateTime
-                           .Parse("4/23/2010"),
+                        DateTime.ParseExact("4/23/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9443,8 +9232,7 @@ namespace ToolsBazaar.Persistence
                     Id = 213,
                     Customer = GetCustomerById(73),
                     Date =
-                        DateTime
-                           .Parse("7/12/2010"),
+                        DateTime.ParseExact("7/12/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9479,8 +9267,7 @@ namespace ToolsBazaar.Persistence
                     Id = 214,
                     Customer = GetCustomerById(61),
                     Date =
-                        DateTime
-                           .Parse("6/20/2015"),
+                        DateTime.ParseExact("6/20/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9539,8 +9326,7 @@ namespace ToolsBazaar.Persistence
                     Id = 215,
                     Customer = GetCustomerById(41),
                     Date =
-                        DateTime
-                           .Parse("10/11/2010"),
+                        DateTime.ParseExact("10/11/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9575,8 +9361,7 @@ namespace ToolsBazaar.Persistence
                     Id = 216,
                     Customer = GetCustomerById(47),
                     Date =
-                        DateTime
-                           .Parse("6/6/2021"),
+                        DateTime.ParseExact("6/6/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9619,8 +9404,7 @@ namespace ToolsBazaar.Persistence
                     Id = 217,
                     Customer = GetCustomerById(87),
                     Date =
-                        DateTime
-                           .Parse("9/2/2019"),
+                        DateTime.ParseExact("9/2/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9639,8 +9423,7 @@ namespace ToolsBazaar.Persistence
                     Id = 218,
                     Customer = GetCustomerById(93),
                     Date =
-                        DateTime
-                           .Parse("11/28/2016"),
+                        DateTime.ParseExact("11/28/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9659,8 +9442,7 @@ namespace ToolsBazaar.Persistence
                     Id = 219,
                     Customer = GetCustomerById(41),
                     Date =
-                        DateTime
-                           .Parse("3/4/2010"),
+                        DateTime.ParseExact("3/4/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9703,8 +9485,7 @@ namespace ToolsBazaar.Persistence
                     Id = 220,
                     Customer = GetCustomerById(1),
                     Date =
-                        DateTime
-                           .Parse("12/7/2012"),
+                        DateTime.ParseExact("12/7/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9763,8 +9544,7 @@ namespace ToolsBazaar.Persistence
                     Id = 221,
                     Customer = GetCustomerById(23),
                     Date =
-                        DateTime
-                           .Parse("7/9/2020"),
+                        DateTime.ParseExact("7/9/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9791,8 +9571,7 @@ namespace ToolsBazaar.Persistence
                     Id = 222,
                     Customer = GetCustomerById(41),
                     Date =
-                        DateTime
-                           .Parse("12/20/2021"),
+                        DateTime.ParseExact("12/20/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9819,8 +9598,7 @@ namespace ToolsBazaar.Persistence
                     Id = 223,
                     Customer = GetCustomerById(93),
                     Date =
-                        DateTime
-                           .Parse("12/24/2017"),
+                        DateTime.ParseExact("12/24/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9847,8 +9625,7 @@ namespace ToolsBazaar.Persistence
                     Id = 224,
                     Customer = GetCustomerById(25),
                     Date =
-                        DateTime
-                           .Parse("2/15/2021"),
+                        DateTime.ParseExact("2/15/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9875,8 +9652,7 @@ namespace ToolsBazaar.Persistence
                     Id = 225,
                     Customer = GetCustomerById(7),
                     Date =
-                        DateTime
-                           .Parse("12/2/2021"),
+                        DateTime.ParseExact("12/2/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9895,8 +9671,7 @@ namespace ToolsBazaar.Persistence
                     Id = 226,
                     Customer = GetCustomerById(73),
                     Date =
-                        DateTime
-                           .Parse("12/17/2016"),
+                        DateTime.ParseExact("12/17/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9923,8 +9698,7 @@ namespace ToolsBazaar.Persistence
                     Id = 227,
                     Customer = GetCustomerById(71),
                     Date =
-                        DateTime
-                           .Parse("7/17/2017"),
+                        DateTime.ParseExact("7/17/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9943,8 +9717,7 @@ namespace ToolsBazaar.Persistence
                     Id = 228,
                     Customer = GetCustomerById(35),
                     Date =
-                        DateTime
-                           .Parse("8/26/2021"),
+                        DateTime.ParseExact("8/26/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -9987,8 +9760,7 @@ namespace ToolsBazaar.Persistence
                     Id = 229,
                     Customer = GetCustomerById(15),
                     Date =
-                        DateTime
-                           .Parse("10/15/2016"),
+                        DateTime.ParseExact("10/15/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10023,8 +9795,7 @@ namespace ToolsBazaar.Persistence
                     Id = 230,
                     Customer = GetCustomerById(49),
                     Date =
-                        DateTime
-                           .Parse("10/18/2021"),
+                        DateTime.ParseExact("10/18/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10043,8 +9814,7 @@ namespace ToolsBazaar.Persistence
                     Id = 231,
                     Customer = GetCustomerById(97),
                     Date =
-                        DateTime
-                           .Parse("1/12/2014"),
+                        DateTime.ParseExact("1/12/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10079,8 +9849,7 @@ namespace ToolsBazaar.Persistence
                     Id = 232,
                     Customer = GetCustomerById(63),
                     Date =
-                        DateTime
-                           .Parse("12/11/2016"),
+                        DateTime.ParseExact("12/11/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10115,8 +9884,7 @@ namespace ToolsBazaar.Persistence
                     Id = 233,
                     Customer = GetCustomerById(87),
                     Date =
-                        DateTime
-                           .Parse("1/4/2015"),
+                        DateTime.ParseExact("1/4/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10143,8 +9911,7 @@ namespace ToolsBazaar.Persistence
                     Id = 234,
                     Customer = GetCustomerById(53),
                     Date =
-                        DateTime
-                           .Parse("9/26/2016"),
+                        DateTime.ParseExact("9/26/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10179,8 +9946,7 @@ namespace ToolsBazaar.Persistence
                     Id = 235,
                     Customer = GetCustomerById(51),
                     Date =
-                        DateTime
-                           .Parse("8/3/2011"),
+                        DateTime.ParseExact("8/3/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10199,8 +9965,7 @@ namespace ToolsBazaar.Persistence
                     Id = 236,
                     Customer = GetCustomerById(97),
                     Date =
-                        DateTime
-                           .Parse("11/29/2011"),
+                        DateTime.ParseExact("11/29/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10235,8 +10000,7 @@ namespace ToolsBazaar.Persistence
                     Id = 237,
                     Customer = GetCustomerById(63),
                     Date =
-                        DateTime
-                           .Parse("1/11/2017"),
+                        DateTime.ParseExact("1/11/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10255,8 +10019,7 @@ namespace ToolsBazaar.Persistence
                     Id = 238,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("9/11/2021"),
+                        DateTime.ParseExact("9/11/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10331,8 +10094,7 @@ namespace ToolsBazaar.Persistence
                     Id = 239,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("1/12/2022"),
+                        DateTime.ParseExact("1/12/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10375,8 +10137,7 @@ namespace ToolsBazaar.Persistence
                     Id = 240,
                     Customer = GetCustomerById(51),
                     Date =
-                        DateTime
-                           .Parse("2/2/2018"),
+                        DateTime.ParseExact("2/2/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10395,8 +10156,7 @@ namespace ToolsBazaar.Persistence
                     Id = 241,
                     Customer = GetCustomerById(61),
                     Date =
-                        DateTime
-                           .Parse("7/25/2014"),
+                        DateTime.ParseExact("7/25/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10415,8 +10175,7 @@ namespace ToolsBazaar.Persistence
                     Id = 242,
                     Customer = GetCustomerById(17),
                     Date =
-                        DateTime
-                           .Parse("9/21/2020"),
+                        DateTime.ParseExact("9/21/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10443,8 +10202,7 @@ namespace ToolsBazaar.Persistence
                     Id = 243,
                     Customer = GetCustomerById(35),
                     Date =
-                        DateTime
-                           .Parse("6/4/2016"),
+                        DateTime.ParseExact("6/4/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10487,8 +10245,7 @@ namespace ToolsBazaar.Persistence
                     Id = 244,
                     Customer = GetCustomerById(7),
                     Date =
-                        DateTime
-                           .Parse("12/23/2014"),
+                        DateTime.ParseExact("12/23/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10555,8 +10312,7 @@ namespace ToolsBazaar.Persistence
                     Id = 245,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("1/30/2015"),
+                        DateTime.ParseExact("1/30/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10591,8 +10347,7 @@ namespace ToolsBazaar.Persistence
                     Id = 246,
                     Customer = GetCustomerById(47),
                     Date =
-                        DateTime
-                           .Parse("8/8/2015"),
+                        DateTime.ParseExact("8/8/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10651,8 +10406,7 @@ namespace ToolsBazaar.Persistence
                     Id = 247,
                     Customer = GetCustomerById(91),
                     Date =
-                        DateTime
-                           .Parse("10/2/2017"),
+                        DateTime.ParseExact("10/2/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10695,8 +10449,7 @@ namespace ToolsBazaar.Persistence
                     Id = 248,
                     Customer = GetCustomerById(91),
                     Date =
-                        DateTime
-                           .Parse("10/23/2012"),
+                        DateTime.ParseExact("10/23/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10747,8 +10500,7 @@ namespace ToolsBazaar.Persistence
                     Id = 249,
                     Customer = GetCustomerById(63),
                     Date =
-                        DateTime
-                           .Parse("3/22/2021"),
+                        DateTime.ParseExact("3/22/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10791,8 +10543,7 @@ namespace ToolsBazaar.Persistence
                     Id = 250,
                     Customer = GetCustomerById(63),
                     Date =
-                        DateTime
-                           .Parse("5/13/2010"),
+                        DateTime.ParseExact("5/13/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10835,8 +10586,7 @@ namespace ToolsBazaar.Persistence
                     Id = 251,
                     Customer = GetCustomerById(37),
                     Date =
-                        DateTime
-                           .Parse("10/4/2015"),
+                        DateTime.ParseExact("10/4/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10871,8 +10621,7 @@ namespace ToolsBazaar.Persistence
                     Id = 252,
                     Customer = GetCustomerById(77),
                     Date =
-                        DateTime
-                           .Parse("9/30/2015"),
+                        DateTime.ParseExact("9/30/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10939,8 +10688,7 @@ namespace ToolsBazaar.Persistence
                     Id = 253,
                     Customer = GetCustomerById(91),
                     Date =
-                        DateTime
-                           .Parse("8/22/2021"),
+                        DateTime.ParseExact("8/22/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -10991,8 +10739,7 @@ namespace ToolsBazaar.Persistence
                     Id = 254,
                     Customer = GetCustomerById(19),
                     Date =
-                        DateTime
-                           .Parse("11/25/2017"),
+                        DateTime.ParseExact("11/25/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11035,8 +10782,7 @@ namespace ToolsBazaar.Persistence
                     Id = 255,
                     Customer = GetCustomerById(77),
                     Date =
-                        DateTime
-                           .Parse("1/16/2012"),
+                        DateTime.ParseExact("1/16/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11079,8 +10825,7 @@ namespace ToolsBazaar.Persistence
                     Id = 256,
                     Customer = GetCustomerById(35),
                     Date =
-                        DateTime
-                           .Parse("12/1/2016"),
+                        DateTime.ParseExact("12/1/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11139,8 +10884,7 @@ namespace ToolsBazaar.Persistence
                     Id = 257,
                     Customer = GetCustomerById(9),
                     Date =
-                        DateTime
-                           .Parse("3/4/2013"),
+                        DateTime.ParseExact("3/4/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11175,8 +10919,7 @@ namespace ToolsBazaar.Persistence
                     Id = 258,
                     Customer = GetCustomerById(17),
                     Date =
-                        DateTime
-                           .Parse("4/4/2018"),
+                        DateTime.ParseExact("4/4/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11235,8 +10978,7 @@ namespace ToolsBazaar.Persistence
                     Id = 259,
                     Customer = GetCustomerById(69),
                     Date =
-                        DateTime
-                           .Parse("9/27/2017"),
+                        DateTime.ParseExact("9/27/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11319,8 +11061,7 @@ namespace ToolsBazaar.Persistence
                     Id = 260,
                     Customer = GetCustomerById(81),
                     Date =
-                        DateTime
-                           .Parse("6/14/2017"),
+                        DateTime.ParseExact("6/14/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11363,8 +11104,7 @@ namespace ToolsBazaar.Persistence
                     Id = 261,
                     Customer = GetCustomerById(23),
                     Date =
-                        DateTime
-                           .Parse("4/27/2013"),
+                        DateTime.ParseExact("4/27/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11415,8 +11155,7 @@ namespace ToolsBazaar.Persistence
                     Id = 262,
                     Customer = GetCustomerById(35),
                     Date =
-                        DateTime
-                           .Parse("10/3/2020"),
+                        DateTime.ParseExact("10/3/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11443,8 +11182,7 @@ namespace ToolsBazaar.Persistence
                     Id = 263,
                     Customer = GetCustomerById(37),
                     Date =
-                        DateTime
-                           .Parse("4/22/2021"),
+                        DateTime.ParseExact("4/22/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11471,8 +11209,7 @@ namespace ToolsBazaar.Persistence
                     Id = 264,
                     Customer = GetCustomerById(9),
                     Date =
-                        DateTime
-                           .Parse("2/26/2021"),
+                        DateTime.ParseExact("2/26/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11523,8 +11260,7 @@ namespace ToolsBazaar.Persistence
                     Id = 265,
                     Customer = GetCustomerById(5),
                     Date =
-                        DateTime
-                           .Parse("9/11/2021"),
+                        DateTime.ParseExact("9/11/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11575,8 +11311,7 @@ namespace ToolsBazaar.Persistence
                     Id = 266,
                     Customer = GetCustomerById(95),
                     Date =
-                        DateTime
-                           .Parse("10/2/2018"),
+                        DateTime.ParseExact("10/2/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11619,8 +11354,7 @@ namespace ToolsBazaar.Persistence
                     Id = 267,
                     Customer = GetCustomerById(83),
                     Date =
-                        DateTime
-                           .Parse("5/31/2021"),
+                        DateTime.ParseExact("5/31/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11687,8 +11421,7 @@ namespace ToolsBazaar.Persistence
                     Id = 268,
                     Customer = GetCustomerById(9),
                     Date =
-                        DateTime
-                           .Parse("4/10/2019"),
+                        DateTime.ParseExact("4/10/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11739,8 +11472,7 @@ namespace ToolsBazaar.Persistence
                     Id = 269,
                     Customer = GetCustomerById(51),
                     Date =
-                        DateTime
-                           .Parse("4/13/2013"),
+                        DateTime.ParseExact("4/13/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11759,8 +11491,7 @@ namespace ToolsBazaar.Persistence
                     Id = 270,
                     Customer = GetCustomerById(85),
                     Date =
-                        DateTime
-                           .Parse("3/28/2017"),
+                        DateTime.ParseExact("3/28/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11795,8 +11526,7 @@ namespace ToolsBazaar.Persistence
                     Id = 271,
                     Customer = GetCustomerById(59),
                     Date =
-                        DateTime
-                           .Parse("11/25/2015"),
+                        DateTime.ParseExact("11/25/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11823,8 +11553,7 @@ namespace ToolsBazaar.Persistence
                     Id = 272,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("7/10/2015"),
+                        DateTime.ParseExact("7/10/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11851,8 +11580,7 @@ namespace ToolsBazaar.Persistence
                     Id = 273,
                     Customer = GetCustomerById(37),
                     Date =
-                        DateTime
-                           .Parse("9/26/2013"),
+                        DateTime.ParseExact("9/26/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11871,8 +11599,7 @@ namespace ToolsBazaar.Persistence
                     Id = 274,
                     Customer = GetCustomerById(73),
                     Date =
-                        DateTime
-                           .Parse("5/8/2017"),
+                        DateTime.ParseExact("5/8/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11899,8 +11626,7 @@ namespace ToolsBazaar.Persistence
                     Id = 275,
                     Customer = GetCustomerById(91),
                     Date =
-                        DateTime
-                           .Parse("6/9/2018"),
+                        DateTime.ParseExact("6/9/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11967,8 +11693,7 @@ namespace ToolsBazaar.Persistence
                     Id = 276,
                     Customer = GetCustomerById(61),
                     Date =
-                        DateTime
-                           .Parse("4/7/2013"),
+                        DateTime.ParseExact("4/7/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -11987,8 +11712,7 @@ namespace ToolsBazaar.Persistence
                     Id = 277,
                     Customer = GetCustomerById(95),
                     Date =
-                        DateTime
-                           .Parse("12/3/2017"),
+                        DateTime.ParseExact("12/3/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12055,8 +11779,7 @@ namespace ToolsBazaar.Persistence
                     Id = 278,
                     Customer = GetCustomerById(41),
                     Date =
-                        DateTime
-                           .Parse("9/4/2011"),
+                        DateTime.ParseExact("9/4/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12083,8 +11806,7 @@ namespace ToolsBazaar.Persistence
                     Id = 279,
                     Customer = GetCustomerById(69),
                     Date =
-                        DateTime
-                           .Parse("6/22/2018"),
+                        DateTime.ParseExact("6/22/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12135,8 +11857,7 @@ namespace ToolsBazaar.Persistence
                     Id = 280,
                     Customer = GetCustomerById(11),
                     Date =
-                        DateTime
-                           .Parse("4/26/2011"),
+                        DateTime.ParseExact("4/26/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12171,8 +11892,7 @@ namespace ToolsBazaar.Persistence
                     Id = 281,
                     Customer = GetCustomerById(1),
                     Date =
-                        DateTime
-                           .Parse("6/11/2011"),
+                        DateTime.ParseExact("6/11/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12215,8 +11935,7 @@ namespace ToolsBazaar.Persistence
                     Id = 282,
                     Customer = GetCustomerById(31),
                     Date =
-                        DateTime
-                           .Parse("3/1/2010"),
+                        DateTime.ParseExact("3/1/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12235,8 +11954,7 @@ namespace ToolsBazaar.Persistence
                     Id = 283,
                     Customer = GetCustomerById(33),
                     Date =
-                        DateTime
-                           .Parse("7/20/2017"),
+                        DateTime.ParseExact("7/20/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12295,8 +12013,7 @@ namespace ToolsBazaar.Persistence
                     Id = 284,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("1/10/2021"),
+                        DateTime.ParseExact("1/10/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12347,8 +12064,7 @@ namespace ToolsBazaar.Persistence
                     Id = 285,
                     Customer = GetCustomerById(45),
                     Date =
-                        DateTime
-                           .Parse("12/12/2020"),
+                        DateTime.ParseExact("12/12/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12391,8 +12107,7 @@ namespace ToolsBazaar.Persistence
                     Id = 286,
                     Customer = GetCustomerById(99),
                     Date =
-                        DateTime
-                           .Parse("8/29/2015"),
+                        DateTime.ParseExact("8/29/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12427,8 +12142,7 @@ namespace ToolsBazaar.Persistence
                     Id = 287,
                     Customer = GetCustomerById(49),
                     Date =
-                        DateTime
-                           .Parse("10/28/2016"),
+                        DateTime.ParseExact("10/28/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12447,8 +12161,7 @@ namespace ToolsBazaar.Persistence
                     Id = 288,
                     Customer = GetCustomerById(95),
                     Date =
-                        DateTime
-                           .Parse("12/21/2019"),
+                        DateTime.ParseExact("12/21/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12531,8 +12244,7 @@ namespace ToolsBazaar.Persistence
                     Id = 289,
                     Customer = GetCustomerById(83),
                     Date =
-                        DateTime
-                           .Parse("5/24/2019"),
+                        DateTime.ParseExact("5/24/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12567,8 +12279,7 @@ namespace ToolsBazaar.Persistence
                     Id = 290,
                     Customer = GetCustomerById(31),
                     Date =
-                        DateTime
-                           .Parse("12/24/2016"),
+                        DateTime.ParseExact("12/24/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12611,8 +12322,7 @@ namespace ToolsBazaar.Persistence
                     Id = 291,
                     Customer = GetCustomerById(53),
                     Date =
-                        DateTime
-                           .Parse("5/12/2021"),
+                        DateTime.ParseExact("5/12/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12671,8 +12381,7 @@ namespace ToolsBazaar.Persistence
                     Id = 292,
                     Customer = GetCustomerById(69),
                     Date =
-                        DateTime
-                           .Parse("10/21/2016"),
+                        DateTime.ParseExact("10/21/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12699,8 +12408,7 @@ namespace ToolsBazaar.Persistence
                     Id = 293,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("6/23/2017"),
+                        DateTime.ParseExact("6/23/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12727,8 +12435,7 @@ namespace ToolsBazaar.Persistence
                     Id = 294,
                     Customer = GetCustomerById(89),
                     Date =
-                        DateTime
-                           .Parse("4/10/2018"),
+                        DateTime.ParseExact("4/10/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12763,8 +12470,7 @@ namespace ToolsBazaar.Persistence
                     Id = 295,
                     Customer = GetCustomerById(5),
                     Date =
-                        DateTime
-                           .Parse("1/30/2014"),
+                        DateTime.ParseExact("1/30/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12831,8 +12537,7 @@ namespace ToolsBazaar.Persistence
                     Id = 296,
                     Customer = GetCustomerById(17),
                     Date =
-                        DateTime
-                           .Parse("2/15/2021"),
+                        DateTime.ParseExact("2/15/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12907,8 +12612,7 @@ namespace ToolsBazaar.Persistence
                     Id = 297,
                     Customer = GetCustomerById(79),
                     Date =
-                        DateTime
-                           .Parse("3/21/2015"),
+                        DateTime.ParseExact("3/21/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12927,8 +12631,7 @@ namespace ToolsBazaar.Persistence
                     Id = 298,
                     Customer = GetCustomerById(3),
                     Date =
-                        DateTime
-                           .Parse("10/31/2016"),
+                        DateTime.ParseExact("10/31/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -12987,8 +12690,7 @@ namespace ToolsBazaar.Persistence
                     Id = 299,
                     Customer = GetCustomerById(39),
                     Date =
-                        DateTime
-                           .Parse("10/3/2016"),
+                        DateTime.ParseExact("10/3/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13015,8 +12717,7 @@ namespace ToolsBazaar.Persistence
                     Id = 300,
                     Customer = GetCustomerById(51),
                     Date =
-                        DateTime
-                           .Parse("7/9/2019"),
+                        DateTime.ParseExact("7/9/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13099,8 +12800,7 @@ namespace ToolsBazaar.Persistence
                     Id = 301,
                     Customer = GetCustomerById(61),
                     Date =
-                        DateTime
-                           .Parse("7/17/2018"),
+                        DateTime.ParseExact("7/17/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13167,8 +12867,7 @@ namespace ToolsBazaar.Persistence
                     Id = 302,
                     Customer = GetCustomerById(77),
                     Date =
-                        DateTime
-                           .Parse("4/2/2019"),
+                        DateTime.ParseExact("4/2/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13195,8 +12894,7 @@ namespace ToolsBazaar.Persistence
                     Id = 303,
                     Customer = GetCustomerById(51),
                     Date =
-                        DateTime
-                           .Parse("8/6/2017"),
+                        DateTime.ParseExact("8/6/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13271,8 +12969,7 @@ namespace ToolsBazaar.Persistence
                     Id = 304,
                     Customer = GetCustomerById(5),
                     Date =
-                        DateTime
-                           .Parse("12/29/2018"),
+                        DateTime.ParseExact("12/29/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13331,8 +13028,7 @@ namespace ToolsBazaar.Persistence
                     Id = 305,
                     Customer = GetCustomerById(39),
                     Date =
-                        DateTime
-                           .Parse("5/17/2012"),
+                        DateTime.ParseExact("5/17/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13359,8 +13055,7 @@ namespace ToolsBazaar.Persistence
                     Id = 306,
                     Customer = GetCustomerById(19),
                     Date =
-                        DateTime
-                           .Parse("6/15/2017"),
+                        DateTime.ParseExact("6/15/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13395,8 +13090,7 @@ namespace ToolsBazaar.Persistence
                     Id = 307,
                     Customer = GetCustomerById(79),
                     Date =
-                        DateTime
-                           .Parse("3/15/2010"),
+                        DateTime.ParseExact("3/15/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13423,8 +13117,7 @@ namespace ToolsBazaar.Persistence
                     Id = 308,
                     Customer = GetCustomerById(3),
                     Date =
-                        DateTime
-                           .Parse("11/13/2022"),
+                        DateTime.ParseExact("11/13/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13475,8 +13168,7 @@ namespace ToolsBazaar.Persistence
                     Id = 309,
                     Customer = GetCustomerById(13),
                     Date =
-                        DateTime
-                           .Parse("1/1/2019"),
+                        DateTime.ParseExact("1/1/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13511,8 +13203,7 @@ namespace ToolsBazaar.Persistence
                     Id = 310,
                     Customer = GetCustomerById(59),
                     Date =
-                        DateTime
-                           .Parse("8/26/2015"),
+                        DateTime.ParseExact("8/26/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13539,8 +13230,7 @@ namespace ToolsBazaar.Persistence
                     Id = 311,
                     Customer = GetCustomerById(85),
                     Date =
-                        DateTime
-                           .Parse("12/18/2010"),
+                        DateTime.ParseExact("12/18/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13599,8 +13289,7 @@ namespace ToolsBazaar.Persistence
                     Id = 312,
                     Customer = GetCustomerById(37),
                     Date =
-                        DateTime
-                           .Parse("1/3/2018"),
+                        DateTime.ParseExact("1/3/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13643,8 +13332,7 @@ namespace ToolsBazaar.Persistence
                     Id = 313,
                     Customer = GetCustomerById(61),
                     Date =
-                        DateTime
-                           .Parse("2/3/2017"),
+                        DateTime.ParseExact("2/3/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13695,8 +13383,7 @@ namespace ToolsBazaar.Persistence
                     Id = 314,
                     Customer = GetCustomerById(53),
                     Date =
-                        DateTime
-                           .Parse("6/10/2011"),
+                        DateTime.ParseExact("6/10/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13739,8 +13426,7 @@ namespace ToolsBazaar.Persistence
                     Id = 315,
                     Customer = GetCustomerById(89),
                     Date =
-                        DateTime
-                           .Parse("11/10/2017"),
+                        DateTime.ParseExact("11/10/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13767,8 +13453,7 @@ namespace ToolsBazaar.Persistence
                     Id = 316,
                     Customer = GetCustomerById(87),
                     Date =
-                        DateTime
-                           .Parse("11/26/2019"),
+                        DateTime.ParseExact("11/26/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13827,8 +13512,7 @@ namespace ToolsBazaar.Persistence
                     Id = 317,
                     Customer = GetCustomerById(93),
                     Date =
-                        DateTime
-                           .Parse("10/26/2021"),
+                        DateTime.ParseExact("10/26/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13847,8 +13531,7 @@ namespace ToolsBazaar.Persistence
                     Id = 318,
                     Customer = GetCustomerById(93),
                     Date =
-                        DateTime
-                           .Parse("11/10/2016"),
+                        DateTime.ParseExact("11/10/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13867,8 +13550,7 @@ namespace ToolsBazaar.Persistence
                     Id = 319,
                     Customer = GetCustomerById(85),
                     Date =
-                        DateTime
-                           .Parse("10/20/2012"),
+                        DateTime.ParseExact("10/20/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13903,8 +13585,7 @@ namespace ToolsBazaar.Persistence
                     Id = 320,
                     Customer = GetCustomerById(33),
                     Date =
-                        DateTime
-                           .Parse("12/10/2010"),
+                        DateTime.ParseExact("12/10/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -13963,8 +13644,7 @@ namespace ToolsBazaar.Persistence
                     Id = 321,
                     Customer = GetCustomerById(85),
                     Date =
-                        DateTime
-                           .Parse("5/17/2021"),
+                        DateTime.ParseExact("5/17/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14023,8 +13703,7 @@ namespace ToolsBazaar.Persistence
                     Id = 322,
                     Customer = GetCustomerById(75),
                     Date =
-                        DateTime
-                           .Parse("6/7/2022"),
+                        DateTime.ParseExact("6/7/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14043,8 +13722,7 @@ namespace ToolsBazaar.Persistence
                     Id = 323,
                     Customer = GetCustomerById(13),
                     Date =
-                        DateTime
-                           .Parse("1/17/2017"),
+                        DateTime.ParseExact("1/17/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14103,8 +13781,7 @@ namespace ToolsBazaar.Persistence
                     Id = 324,
                     Customer = GetCustomerById(15),
                     Date =
-                        DateTime
-                           .Parse("6/24/2017"),
+                        DateTime.ParseExact("6/24/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14147,8 +13824,7 @@ namespace ToolsBazaar.Persistence
                     Id = 325,
                     Customer = GetCustomerById(91),
                     Date =
-                        DateTime
-                           .Parse("7/18/2015"),
+                        DateTime.ParseExact("7/18/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14199,8 +13875,7 @@ namespace ToolsBazaar.Persistence
                     Id = 326,
                     Customer = GetCustomerById(59),
                     Date =
-                        DateTime
-                           .Parse("7/23/2015"),
+                        DateTime.ParseExact("7/23/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14243,8 +13918,7 @@ namespace ToolsBazaar.Persistence
                     Id = 327,
                     Customer = GetCustomerById(33),
                     Date =
-                        DateTime
-                           .Parse("4/30/2013"),
+                        DateTime.ParseExact("4/30/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14279,8 +13953,7 @@ namespace ToolsBazaar.Persistence
                     Id = 328,
                     Customer = GetCustomerById(41),
                     Date =
-                        DateTime
-                           .Parse("3/29/2016"),
+                        DateTime.ParseExact("3/29/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14355,8 +14028,7 @@ namespace ToolsBazaar.Persistence
                     Id = 329,
                     Customer = GetCustomerById(57),
                     Date =
-                        DateTime
-                           .Parse("3/24/2022"),
+                        DateTime.ParseExact("3/24/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14415,8 +14087,7 @@ namespace ToolsBazaar.Persistence
                     Id = 330,
                     Customer = GetCustomerById(99),
                     Date =
-                        DateTime
-                           .Parse("9/20/2011"),
+                        DateTime.ParseExact("9/20/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14459,8 +14130,7 @@ namespace ToolsBazaar.Persistence
                     Id = 331,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("3/15/2022"),
+                        DateTime.ParseExact("3/15/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14479,8 +14149,7 @@ namespace ToolsBazaar.Persistence
                     Id = 332,
                     Customer = GetCustomerById(77),
                     Date =
-                        DateTime
-                           .Parse("6/14/2017"),
+                        DateTime.ParseExact("6/14/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14523,8 +14192,7 @@ namespace ToolsBazaar.Persistence
                     Id = 333,
                     Customer = GetCustomerById(27),
                     Date =
-                        DateTime
-                           .Parse("6/13/2014"),
+                        DateTime.ParseExact("6/13/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14583,8 +14251,7 @@ namespace ToolsBazaar.Persistence
                     Id = 334,
                     Customer = GetCustomerById(11),
                     Date =
-                        DateTime
-                           .Parse("7/27/2017"),
+                        DateTime.ParseExact("7/27/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14651,8 +14318,7 @@ namespace ToolsBazaar.Persistence
                     Id = 335,
                     Customer = GetCustomerById(93),
                     Date =
-                        DateTime
-                           .Parse("1/1/2021"),
+                        DateTime.ParseExact("1/1/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14687,8 +14353,7 @@ namespace ToolsBazaar.Persistence
                     Id = 336,
                     Customer = GetCustomerById(37),
                     Date =
-                        DateTime
-                           .Parse("10/2/2017"),
+                        DateTime.ParseExact("10/2/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14715,8 +14380,7 @@ namespace ToolsBazaar.Persistence
                     Id = 337,
                     Customer = GetCustomerById(79),
                     Date =
-                        DateTime
-                           .Parse("2/24/2023"),
+                        DateTime.ParseExact("2/24/2023", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14791,8 +14455,7 @@ namespace ToolsBazaar.Persistence
                     Id = 338,
                     Customer = GetCustomerById(61),
                     Date =
-                        DateTime
-                           .Parse("6/24/2016"),
+                        DateTime.ParseExact("6/24/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14851,8 +14514,7 @@ namespace ToolsBazaar.Persistence
                     Id = 339,
                     Customer = GetCustomerById(85),
                     Date =
-                        DateTime
-                           .Parse("8/15/2021"),
+                        DateTime.ParseExact("8/15/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14895,8 +14557,7 @@ namespace ToolsBazaar.Persistence
                     Id = 340,
                     Customer = GetCustomerById(21),
                     Date =
-                        DateTime
-                           .Parse("11/2/2021"),
+                        DateTime.ParseExact("11/2/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14931,8 +14592,7 @@ namespace ToolsBazaar.Persistence
                     Id = 341,
                     Customer = GetCustomerById(23),
                     Date =
-                        DateTime
-                           .Parse("7/1/2021"),
+                        DateTime.ParseExact("7/1/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -14975,8 +14635,7 @@ namespace ToolsBazaar.Persistence
                     Id = 342,
                     Customer = GetCustomerById(73),
                     Date =
-                        DateTime
-                           .Parse("9/15/2014"),
+                        DateTime.ParseExact("9/15/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15027,8 +14686,7 @@ namespace ToolsBazaar.Persistence
                     Id = 343,
                     Customer = GetCustomerById(81),
                     Date =
-                        DateTime
-                           .Parse("2/6/2022"),
+                        DateTime.ParseExact("2/6/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15047,8 +14705,7 @@ namespace ToolsBazaar.Persistence
                     Id = 344,
                     Customer = GetCustomerById(13),
                     Date =
-                        DateTime
-                           .Parse("2/25/2014"),
+                        DateTime.ParseExact("2/25/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15067,8 +14724,7 @@ namespace ToolsBazaar.Persistence
                     Id = 345,
                     Customer = GetCustomerById(1),
                     Date =
-                        DateTime
-                           .Parse("1/20/2021"),
+                        DateTime.ParseExact("1/20/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15087,8 +14743,7 @@ namespace ToolsBazaar.Persistence
                     Id = 346,
                     Customer = GetCustomerById(81),
                     Date =
-                        DateTime
-                           .Parse("9/30/2010"),
+                        DateTime.ParseExact("9/30/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15147,8 +14802,7 @@ namespace ToolsBazaar.Persistence
                     Id = 347,
                     Customer = GetCustomerById(9),
                     Date =
-                        DateTime
-                           .Parse("9/16/2011"),
+                        DateTime.ParseExact("9/16/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15167,8 +14821,7 @@ namespace ToolsBazaar.Persistence
                     Id = 348,
                     Customer = GetCustomerById(17),
                     Date =
-                        DateTime
-                           .Parse("6/25/2010"),
+                        DateTime.ParseExact("6/25/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15203,8 +14856,7 @@ namespace ToolsBazaar.Persistence
                     Id = 349,
                     Customer = GetCustomerById(79),
                     Date =
-                        DateTime
-                           .Parse("11/14/2016"),
+                        DateTime.ParseExact("11/14/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15239,8 +14891,7 @@ namespace ToolsBazaar.Persistence
                     Id = 350,
                     Customer = GetCustomerById(13),
                     Date =
-                        DateTime
-                           .Parse("5/28/2015"),
+                        DateTime.ParseExact("5/28/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15267,8 +14918,7 @@ namespace ToolsBazaar.Persistence
                     Id = 351,
                     Customer = GetCustomerById(41),
                     Date =
-                        DateTime
-                           .Parse("9/14/2017"),
+                        DateTime.ParseExact("9/14/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15287,8 +14937,7 @@ namespace ToolsBazaar.Persistence
                     Id = 352,
                     Customer = GetCustomerById(77),
                     Date =
-                        DateTime
-                           .Parse("12/25/2021"),
+                        DateTime.ParseExact("12/25/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15323,8 +14972,7 @@ namespace ToolsBazaar.Persistence
                     Id = 353,
                     Customer = GetCustomerById(7),
                     Date =
-                        DateTime
-                           .Parse("9/28/2015"),
+                        DateTime.ParseExact("9/28/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15375,8 +15023,7 @@ namespace ToolsBazaar.Persistence
                     Id = 354,
                     Customer = GetCustomerById(67),
                     Date =
-                        DateTime
-                           .Parse("2/4/2022"),
+                        DateTime.ParseExact("2/4/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15403,8 +15050,7 @@ namespace ToolsBazaar.Persistence
                     Id = 355,
                     Customer = GetCustomerById(37),
                     Date =
-                        DateTime
-                           .Parse("8/3/2011"),
+                        DateTime.ParseExact("8/3/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15431,8 +15077,7 @@ namespace ToolsBazaar.Persistence
                     Id = 356,
                     Customer = GetCustomerById(69),
                     Date =
-                        DateTime
-                           .Parse("9/22/2021"),
+                        DateTime.ParseExact("9/22/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15491,8 +15136,7 @@ namespace ToolsBazaar.Persistence
                     Id = 357,
                     Customer = GetCustomerById(77),
                     Date =
-                        DateTime
-                           .Parse("12/14/2010"),
+                        DateTime.ParseExact("12/14/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15519,8 +15163,7 @@ namespace ToolsBazaar.Persistence
                     Id = 358,
                     Customer = GetCustomerById(83),
                     Date =
-                        DateTime
-                           .Parse("5/11/2022"),
+                        DateTime.ParseExact("5/11/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15547,8 +15190,7 @@ namespace ToolsBazaar.Persistence
                     Id = 359,
                     Customer = GetCustomerById(1),
                     Date =
-                        DateTime
-                           .Parse("3/4/2011"),
+                        DateTime.ParseExact("3/4/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15575,8 +15217,7 @@ namespace ToolsBazaar.Persistence
                     Id = 360,
                     Customer = GetCustomerById(13),
                     Date =
-                        DateTime
-                           .Parse("3/5/2017"),
+                        DateTime.ParseExact("3/5/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15627,8 +15268,7 @@ namespace ToolsBazaar.Persistence
                     Id = 361,
                     Customer = GetCustomerById(3),
                     Date =
-                        DateTime
-                           .Parse("6/14/2017"),
+                        DateTime.ParseExact("6/14/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15655,8 +15295,7 @@ namespace ToolsBazaar.Persistence
                     Id = 362,
                     Customer = GetCustomerById(15),
                     Date =
-                        DateTime
-                           .Parse("12/16/2022"),
+                        DateTime.ParseExact("12/16/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15699,8 +15338,7 @@ namespace ToolsBazaar.Persistence
                     Id = 363,
                     Customer = GetCustomerById(91),
                     Date =
-                        DateTime
-                           .Parse("4/5/2022"),
+                        DateTime.ParseExact("4/5/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15751,8 +15389,7 @@ namespace ToolsBazaar.Persistence
                     Id = 364,
                     Customer = GetCustomerById(83),
                     Date =
-                        DateTime
-                           .Parse("8/4/2017"),
+                        DateTime.ParseExact("8/4/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15795,8 +15432,7 @@ namespace ToolsBazaar.Persistence
                     Id = 365,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("5/5/2012"),
+                        DateTime.ParseExact("5/5/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15815,8 +15451,7 @@ namespace ToolsBazaar.Persistence
                     Id = 366,
                     Customer = GetCustomerById(63),
                     Date =
-                        DateTime
-                           .Parse("5/28/2021"),
+                        DateTime.ParseExact("5/28/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15851,8 +15486,7 @@ namespace ToolsBazaar.Persistence
                     Id = 367,
                     Customer = GetCustomerById(73),
                     Date =
-                        DateTime
-                           .Parse("1/18/2021"),
+                        DateTime.ParseExact("1/18/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15895,8 +15529,7 @@ namespace ToolsBazaar.Persistence
                     Id = 368,
                     Customer = GetCustomerById(17),
                     Date =
-                        DateTime
-                           .Parse("7/14/2016"),
+                        DateTime.ParseExact("7/14/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15955,8 +15588,7 @@ namespace ToolsBazaar.Persistence
                     Id = 369,
                     Customer = GetCustomerById(21),
                     Date =
-                        DateTime
-                           .Parse("10/14/2013"),
+                        DateTime.ParseExact("10/14/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -15983,8 +15615,7 @@ namespace ToolsBazaar.Persistence
                     Id = 370,
                     Customer = GetCustomerById(65),
                     Date =
-                        DateTime
-                           .Parse("2/12/2010"),
+                        DateTime.ParseExact("2/12/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16011,8 +15642,7 @@ namespace ToolsBazaar.Persistence
                     Id = 371,
                     Customer = GetCustomerById(57),
                     Date =
-                        DateTime
-                           .Parse("3/25/2016"),
+                        DateTime.ParseExact("3/25/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16071,8 +15701,7 @@ namespace ToolsBazaar.Persistence
                     Id = 372,
                     Customer = GetCustomerById(95),
                     Date =
-                        DateTime
-                           .Parse("7/8/2014"),
+                        DateTime.ParseExact("7/8/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16107,8 +15736,7 @@ namespace ToolsBazaar.Persistence
                     Id = 373,
                     Customer = GetCustomerById(37),
                     Date =
-                        DateTime
-                           .Parse("1/29/2013"),
+                        DateTime.ParseExact("1/29/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16135,8 +15763,7 @@ namespace ToolsBazaar.Persistence
                     Id = 374,
                     Customer = GetCustomerById(31),
                     Date =
-                        DateTime
-                           .Parse("9/23/2016"),
+                        DateTime.ParseExact("9/23/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16179,8 +15806,7 @@ namespace ToolsBazaar.Persistence
                     Id = 375,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("7/10/2021"),
+                        DateTime.ParseExact("7/10/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16223,8 +15849,7 @@ namespace ToolsBazaar.Persistence
                     Id = 376,
                     Customer = GetCustomerById(33),
                     Date =
-                        DateTime
-                           .Parse("5/3/2011"),
+                        DateTime.ParseExact("5/3/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16243,8 +15868,7 @@ namespace ToolsBazaar.Persistence
                     Id = 377,
                     Customer = GetCustomerById(65),
                     Date =
-                        DateTime
-                           .Parse("5/15/2017"),
+                        DateTime.ParseExact("5/15/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16311,8 +15935,7 @@ namespace ToolsBazaar.Persistence
                     Id = 378,
                     Customer = GetCustomerById(31),
                     Date =
-                        DateTime
-                           .Parse("9/21/2022"),
+                        DateTime.ParseExact("9/21/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16339,8 +15962,7 @@ namespace ToolsBazaar.Persistence
                     Id = 379,
                     Customer = GetCustomerById(75),
                     Date =
-                        DateTime
-                           .Parse("2/5/2019"),
+                        DateTime.ParseExact("2/5/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16359,8 +15981,7 @@ namespace ToolsBazaar.Persistence
                     Id = 380,
                     Customer = GetCustomerById(81),
                     Date =
-                        DateTime
-                           .Parse("5/4/2016"),
+                        DateTime.ParseExact("5/4/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16427,8 +16048,7 @@ namespace ToolsBazaar.Persistence
                     Id = 381,
                     Customer = GetCustomerById(57),
                     Date =
-                        DateTime
-                           .Parse("3/4/2017"),
+                        DateTime.ParseExact("3/4/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16447,8 +16067,7 @@ namespace ToolsBazaar.Persistence
                     Id = 382,
                     Customer = GetCustomerById(39),
                     Date =
-                        DateTime
-                           .Parse("2/20/2019"),
+                        DateTime.ParseExact("2/20/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16483,8 +16102,7 @@ namespace ToolsBazaar.Persistence
                     Id = 383,
                     Customer = GetCustomerById(45),
                     Date =
-                        DateTime
-                           .Parse("6/14/2012"),
+                        DateTime.ParseExact("6/14/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16503,8 +16121,7 @@ namespace ToolsBazaar.Persistence
                     Id = 384,
                     Customer = GetCustomerById(63),
                     Date =
-                        DateTime
-                           .Parse("6/2/2020"),
+                        DateTime.ParseExact("6/2/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16547,8 +16164,7 @@ namespace ToolsBazaar.Persistence
                     Id = 385,
                     Customer = GetCustomerById(85),
                     Date =
-                        DateTime
-                           .Parse("12/31/2021"),
+                        DateTime.ParseExact("12/31/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16575,8 +16191,7 @@ namespace ToolsBazaar.Persistence
                     Id = 386,
                     Customer = GetCustomerById(31),
                     Date =
-                        DateTime
-                           .Parse("4/8/2017"),
+                        DateTime.ParseExact("4/8/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16595,8 +16210,7 @@ namespace ToolsBazaar.Persistence
                     Id = 387,
                     Customer = GetCustomerById(5),
                     Date =
-                        DateTime
-                           .Parse("8/30/2017"),
+                        DateTime.ParseExact("8/30/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16655,8 +16269,7 @@ namespace ToolsBazaar.Persistence
                     Id = 388,
                     Customer = GetCustomerById(93),
                     Date =
-                        DateTime
-                           .Parse("11/29/2019"),
+                        DateTime.ParseExact("11/29/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16691,8 +16304,7 @@ namespace ToolsBazaar.Persistence
                     Id = 389,
                     Customer = GetCustomerById(71),
                     Date =
-                        DateTime
-                           .Parse("3/7/2018"),
+                        DateTime.ParseExact("3/7/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16711,8 +16323,7 @@ namespace ToolsBazaar.Persistence
                     Id = 390,
                     Customer = GetCustomerById(91),
                     Date =
-                        DateTime
-                           .Parse("11/10/2021"),
+                        DateTime.ParseExact("11/10/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16747,8 +16358,7 @@ namespace ToolsBazaar.Persistence
                     Id = 391,
                     Customer = GetCustomerById(87),
                     Date =
-                        DateTime
-                           .Parse("7/29/2014"),
+                        DateTime.ParseExact("7/29/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16767,8 +16377,7 @@ namespace ToolsBazaar.Persistence
                     Id = 392,
                     Customer = GetCustomerById(23),
                     Date =
-                        DateTime
-                           .Parse("11/8/2013"),
+                        DateTime.ParseExact("11/8/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16835,8 +16444,7 @@ namespace ToolsBazaar.Persistence
                     Id = 393,
                     Customer = GetCustomerById(91),
                     Date =
-                        DateTime
-                           .Parse("7/9/2021"),
+                        DateTime.ParseExact("7/9/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16879,8 +16487,7 @@ namespace ToolsBazaar.Persistence
                     Id = 394,
                     Customer = GetCustomerById(39),
                     Date =
-                        DateTime
-                           .Parse("11/23/2012"),
+                        DateTime.ParseExact("11/23/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16907,8 +16514,7 @@ namespace ToolsBazaar.Persistence
                     Id = 395,
                     Customer = GetCustomerById(9),
                     Date =
-                        DateTime
-                           .Parse("2/8/2017"),
+                        DateTime.ParseExact("2/8/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -16943,8 +16549,7 @@ namespace ToolsBazaar.Persistence
                     Id = 396,
                     Customer = GetCustomerById(91),
                     Date =
-                        DateTime
-                           .Parse("10/23/2018"),
+                        DateTime.ParseExact("10/23/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17027,8 +16632,7 @@ namespace ToolsBazaar.Persistence
                     Id = 397,
                     Customer = GetCustomerById(53),
                     Date =
-                        DateTime
-                           .Parse("9/23/2020"),
+                        DateTime.ParseExact("9/23/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17055,8 +16659,7 @@ namespace ToolsBazaar.Persistence
                     Id = 398,
                     Customer = GetCustomerById(53),
                     Date =
-                        DateTime
-                           .Parse("2/2/2021"),
+                        DateTime.ParseExact("2/2/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17075,8 +16678,7 @@ namespace ToolsBazaar.Persistence
                     Id = 399,
                     Customer = GetCustomerById(25),
                     Date =
-                        DateTime
-                           .Parse("12/16/2021"),
+                        DateTime.ParseExact("12/16/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17119,8 +16721,7 @@ namespace ToolsBazaar.Persistence
                     Id = 400,
                     Customer = GetCustomerById(99),
                     Date =
-                        DateTime
-                           .Parse("10/31/2022"),
+                        DateTime.ParseExact("10/31/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17139,8 +16740,7 @@ namespace ToolsBazaar.Persistence
                     Id = 401,
                     Customer = GetCustomerById(99),
                     Date =
-                        DateTime
-                           .Parse("6/13/2019"),
+                        DateTime.ParseExact("6/13/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17159,8 +16759,7 @@ namespace ToolsBazaar.Persistence
                     Id = 402,
                     Customer = GetCustomerById(55),
                     Date =
-                        DateTime
-                           .Parse("12/13/2016"),
+                        DateTime.ParseExact("12/13/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17219,8 +16818,7 @@ namespace ToolsBazaar.Persistence
                     Id = 403,
                     Customer = GetCustomerById(69),
                     Date =
-                        DateTime
-                           .Parse("11/1/2021"),
+                        DateTime.ParseExact("11/1/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17247,8 +16845,7 @@ namespace ToolsBazaar.Persistence
                     Id = 404,
                     Customer = GetCustomerById(69),
                     Date =
-                        DateTime
-                           .Parse("10/4/2018"),
+                        DateTime.ParseExact("10/4/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17307,8 +16904,7 @@ namespace ToolsBazaar.Persistence
                     Id = 405,
                     Customer = GetCustomerById(1),
                     Date =
-                        DateTime
-                           .Parse("10/6/2018"),
+                        DateTime.ParseExact("10/6/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17335,8 +16931,7 @@ namespace ToolsBazaar.Persistence
                     Id = 406,
                     Customer = GetCustomerById(31),
                     Date =
-                        DateTime
-                           .Parse("5/1/2022"),
+                        DateTime.ParseExact("5/1/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17355,8 +16950,7 @@ namespace ToolsBazaar.Persistence
                     Id = 407,
                     Customer = GetCustomerById(37),
                     Date =
-                        DateTime
-                           .Parse("4/14/2019"),
+                        DateTime.ParseExact("4/14/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17383,8 +16977,7 @@ namespace ToolsBazaar.Persistence
                     Id = 408,
                     Customer = GetCustomerById(11),
                     Date =
-                        DateTime
-                           .Parse("9/28/2016"),
+                        DateTime.ParseExact("9/28/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17435,8 +17028,7 @@ namespace ToolsBazaar.Persistence
                     Id = 409,
                     Customer = GetCustomerById(61),
                     Date =
-                        DateTime
-                           .Parse("11/7/2016"),
+                        DateTime.ParseExact("11/7/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17503,8 +17095,7 @@ namespace ToolsBazaar.Persistence
                     Id = 410,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("10/15/2015"),
+                        DateTime.ParseExact("10/15/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17547,8 +17138,7 @@ namespace ToolsBazaar.Persistence
                     Id = 411,
                     Customer = GetCustomerById(79),
                     Date =
-                        DateTime
-                           .Parse("10/5/2017"),
+                        DateTime.ParseExact("10/5/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17591,8 +17181,7 @@ namespace ToolsBazaar.Persistence
                     Id = 412,
                     Customer = GetCustomerById(75),
                     Date =
-                        DateTime
-                           .Parse("10/18/2011"),
+                        DateTime.ParseExact("10/18/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17619,8 +17208,7 @@ namespace ToolsBazaar.Persistence
                     Id = 413,
                     Customer = GetCustomerById(85),
                     Date =
-                        DateTime
-                           .Parse("8/27/2011"),
+                        DateTime.ParseExact("8/27/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17663,8 +17251,7 @@ namespace ToolsBazaar.Persistence
                     Id = 414,
                     Customer = GetCustomerById(61),
                     Date =
-                        DateTime
-                           .Parse("12/5/2013"),
+                        DateTime.ParseExact("12/5/2013", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17683,8 +17270,7 @@ namespace ToolsBazaar.Persistence
                     Id = 415,
                     Customer = GetCustomerById(77),
                     Date =
-                        DateTime
-                           .Parse("11/27/2015"),
+                        DateTime.ParseExact("11/27/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17703,8 +17289,7 @@ namespace ToolsBazaar.Persistence
                     Id = 416,
                     Customer = GetCustomerById(65),
                     Date =
-                        DateTime
-                           .Parse("1/16/2016"),
+                        DateTime.ParseExact("1/16/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17755,8 +17340,7 @@ namespace ToolsBazaar.Persistence
                     Id = 417,
                     Customer = GetCustomerById(23),
                     Date =
-                        DateTime
-                           .Parse("2/11/2020"),
+                        DateTime.ParseExact("2/11/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17799,8 +17383,7 @@ namespace ToolsBazaar.Persistence
                     Id = 418,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("12/4/2022"),
+                        DateTime.ParseExact("12/4/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17851,8 +17434,7 @@ namespace ToolsBazaar.Persistence
                     Id = 419,
                     Customer = GetCustomerById(3),
                     Date =
-                        DateTime
-                           .Parse("11/6/2010"),
+                        DateTime.ParseExact("11/6/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17895,8 +17477,7 @@ namespace ToolsBazaar.Persistence
                     Id = 420,
                     Customer = GetCustomerById(7),
                     Date =
-                        DateTime
-                           .Parse("5/3/2017"),
+                        DateTime.ParseExact("5/3/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17955,8 +17536,7 @@ namespace ToolsBazaar.Persistence
                     Id = 421,
                     Customer = GetCustomerById(49),
                     Date =
-                        DateTime
-                           .Parse("4/26/2014"),
+                        DateTime.ParseExact("4/26/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -17991,8 +17571,7 @@ namespace ToolsBazaar.Persistence
                     Id = 422,
                     Customer = GetCustomerById(7),
                     Date =
-                        DateTime
-                           .Parse("8/3/2012"),
+                        DateTime.ParseExact("8/3/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18043,8 +17622,7 @@ namespace ToolsBazaar.Persistence
                     Id = 423,
                     Customer = GetCustomerById(31),
                     Date =
-                        DateTime
-                           .Parse("5/1/2014"),
+                        DateTime.ParseExact("5/1/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18095,8 +17673,7 @@ namespace ToolsBazaar.Persistence
                     Id = 424,
                     Customer = GetCustomerById(79),
                     Date =
-                        DateTime
-                           .Parse("3/8/2022"),
+                        DateTime.ParseExact("3/8/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18115,8 +17692,7 @@ namespace ToolsBazaar.Persistence
                     Id = 425,
                     Customer = GetCustomerById(99),
                     Date =
-                        DateTime
-                           .Parse("8/13/2010"),
+                        DateTime.ParseExact("8/13/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18143,8 +17719,7 @@ namespace ToolsBazaar.Persistence
                     Id = 426,
                     Customer = GetCustomerById(31),
                     Date =
-                        DateTime
-                           .Parse("5/4/2017"),
+                        DateTime.ParseExact("5/4/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18195,8 +17770,7 @@ namespace ToolsBazaar.Persistence
                     Id = 427,
                     Customer = GetCustomerById(75),
                     Date =
-                        DateTime
-                           .Parse("3/9/2017"),
+                        DateTime.ParseExact("3/9/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18231,8 +17805,7 @@ namespace ToolsBazaar.Persistence
                     Id = 428,
                     Customer = GetCustomerById(73),
                     Date =
-                        DateTime
-                           .Parse("10/2/2017"),
+                        DateTime.ParseExact("10/2/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18259,8 +17832,7 @@ namespace ToolsBazaar.Persistence
                     Id = 429,
                     Customer = GetCustomerById(7),
                     Date =
-                        DateTime
-                           .Parse("9/2/2010"),
+                        DateTime.ParseExact("9/2/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18311,8 +17883,7 @@ namespace ToolsBazaar.Persistence
                     Id = 430,
                     Customer = GetCustomerById(99),
                     Date =
-                        DateTime
-                           .Parse("7/9/2012"),
+                        DateTime.ParseExact("7/9/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18347,8 +17918,7 @@ namespace ToolsBazaar.Persistence
                     Id = 431,
                     Customer = GetCustomerById(27),
                     Date =
-                        DateTime
-                           .Parse("2/1/2017"),
+                        DateTime.ParseExact("2/1/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18367,8 +17937,7 @@ namespace ToolsBazaar.Persistence
                     Id = 432,
                     Customer = GetCustomerById(63),
                     Date =
-                        DateTime
-                           .Parse("5/15/2021"),
+                        DateTime.ParseExact("5/15/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18403,8 +17972,7 @@ namespace ToolsBazaar.Persistence
                     Id = 433,
                     Customer = GetCustomerById(47),
                     Date =
-                        DateTime
-                           .Parse("7/6/2020"),
+                        DateTime.ParseExact("7/6/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18455,8 +18023,7 @@ namespace ToolsBazaar.Persistence
                     Id = 434,
                     Customer = GetCustomerById(39),
                     Date =
-                        DateTime
-                           .Parse("8/26/2017"),
+                        DateTime.ParseExact("8/26/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18483,8 +18050,7 @@ namespace ToolsBazaar.Persistence
                     Id = 435,
                     Customer = GetCustomerById(15),
                     Date =
-                        DateTime
-                           .Parse("9/11/2012"),
+                        DateTime.ParseExact("9/11/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18503,8 +18069,7 @@ namespace ToolsBazaar.Persistence
                     Id = 436,
                     Customer = GetCustomerById(37),
                     Date =
-                        DateTime
-                           .Parse("9/18/2015"),
+                        DateTime.ParseExact("9/18/2015", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18547,8 +18112,7 @@ namespace ToolsBazaar.Persistence
                     Id = 437,
                     Customer = GetCustomerById(87),
                     Date =
-                        DateTime
-                           .Parse("12/16/2010"),
+                        DateTime.ParseExact("12/16/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18591,8 +18155,7 @@ namespace ToolsBazaar.Persistence
                     Id = 438,
                     Customer = GetCustomerById(15),
                     Date =
-                        DateTime
-                           .Parse("12/21/2011"),
+                        DateTime.ParseExact("12/21/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18627,8 +18190,7 @@ namespace ToolsBazaar.Persistence
                     Id = 439,
                     Customer = GetCustomerById(99),
                     Date =
-                        DateTime
-                           .Parse("6/27/2016"),
+                        DateTime.ParseExact("6/27/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18679,8 +18241,7 @@ namespace ToolsBazaar.Persistence
                     Id = 440,
                     Customer = GetCustomerById(1),
                     Date =
-                        DateTime
-                           .Parse("12/30/2017"),
+                        DateTime.ParseExact("12/30/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18707,8 +18268,7 @@ namespace ToolsBazaar.Persistence
                     Id = 441,
                     Customer = GetCustomerById(31),
                     Date =
-                        DateTime
-                           .Parse("3/26/2018"),
+                        DateTime.ParseExact("3/26/2018", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18759,8 +18319,7 @@ namespace ToolsBazaar.Persistence
                     Id = 442,
                     Customer = GetCustomerById(87),
                     Date =
-                        DateTime
-                           .Parse("5/16/2012"),
+                        DateTime.ParseExact("5/16/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18803,8 +18362,7 @@ namespace ToolsBazaar.Persistence
                     Id = 443,
                     Customer = GetCustomerById(99),
                     Date =
-                        DateTime
-                           .Parse("2/14/2020"),
+                        DateTime.ParseExact("2/14/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18871,8 +18429,7 @@ namespace ToolsBazaar.Persistence
                     Id = 444,
                     Customer = GetCustomerById(33),
                     Date =
-                        DateTime
-                           .Parse("2/27/2016"),
+                        DateTime.ParseExact("2/27/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18939,8 +18496,7 @@ namespace ToolsBazaar.Persistence
                     Id = 445,
                     Customer = GetCustomerById(73),
                     Date =
-                        DateTime
-                           .Parse("12/13/2017"),
+                        DateTime.ParseExact("12/13/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18967,8 +18523,7 @@ namespace ToolsBazaar.Persistence
                     Id = 446,
                     Customer = GetCustomerById(9),
                     Date =
-                        DateTime
-                           .Parse("11/16/2016"),
+                        DateTime.ParseExact("11/16/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -18995,8 +18550,7 @@ namespace ToolsBazaar.Persistence
                     Id = 447,
                     Customer = GetCustomerById(95),
                     Date =
-                        DateTime
-                           .Parse("9/9/2021"),
+                        DateTime.ParseExact("9/9/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19047,8 +18601,7 @@ namespace ToolsBazaar.Persistence
                     Id = 448,
                     Customer = GetCustomerById(67),
                     Date =
-                        DateTime
-                           .Parse("1/11/2011"),
+                        DateTime.ParseExact("1/11/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19115,8 +18668,7 @@ namespace ToolsBazaar.Persistence
                     Id = 449,
                     Customer = GetCustomerById(23),
                     Date =
-                        DateTime
-                           .Parse("8/4/2022"),
+                        DateTime.ParseExact("8/4/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19135,8 +18687,7 @@ namespace ToolsBazaar.Persistence
                     Id = 450,
                     Customer = GetCustomerById(83),
                     Date =
-                        DateTime
-                           .Parse("7/2/2016"),
+                        DateTime.ParseExact("7/2/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19195,8 +18746,7 @@ namespace ToolsBazaar.Persistence
                     Id = 451,
                     Customer = GetCustomerById(89),
                     Date =
-                        DateTime
-                           .Parse("10/12/2022"),
+                        DateTime.ParseExact("10/12/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19223,8 +18773,7 @@ namespace ToolsBazaar.Persistence
                     Id = 452,
                     Customer = GetCustomerById(47),
                     Date =
-                        DateTime
-                           .Parse("11/12/2020"),
+                        DateTime.ParseExact("11/12/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19267,8 +18816,7 @@ namespace ToolsBazaar.Persistence
                     Id = 453,
                     Customer = GetCustomerById(75),
                     Date =
-                        DateTime
-                           .Parse("7/31/2017"),
+                        DateTime.ParseExact("7/31/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19335,8 +18883,7 @@ namespace ToolsBazaar.Persistence
                     Id = 454,
                     Customer = GetCustomerById(13),
                     Date =
-                        DateTime
-                           .Parse("7/21/2017"),
+                        DateTime.ParseExact("7/21/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19355,8 +18902,7 @@ namespace ToolsBazaar.Persistence
                     Id = 455,
                     Customer = GetCustomerById(43),
                     Date =
-                        DateTime
-                           .Parse("10/15/2017"),
+                        DateTime.ParseExact("10/15/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19383,8 +18929,7 @@ namespace ToolsBazaar.Persistence
                     Id = 456,
                     Customer = GetCustomerById(15),
                     Date =
-                        DateTime
-                           .Parse("5/21/2016"),
+                        DateTime.ParseExact("5/21/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19427,8 +18972,7 @@ namespace ToolsBazaar.Persistence
                     Id = 457,
                     Customer = GetCustomerById(67),
                     Date =
-                        DateTime
-                           .Parse("3/1/2021"),
+                        DateTime.ParseExact("3/1/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19463,8 +19007,7 @@ namespace ToolsBazaar.Persistence
                     Id = 458,
                     Customer = GetCustomerById(57),
                     Date =
-                        DateTime
-                           .Parse("9/27/2014"),
+                        DateTime.ParseExact("9/27/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19507,8 +19050,7 @@ namespace ToolsBazaar.Persistence
                     Id = 459,
                     Customer = GetCustomerById(85),
                     Date =
-                        DateTime
-                           .Parse("11/23/2017"),
+                        DateTime.ParseExact("11/23/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19527,8 +19069,7 @@ namespace ToolsBazaar.Persistence
                     Id = 460,
                     Customer = GetCustomerById(47),
                     Date =
-                        DateTime
-                           .Parse("10/9/2017"),
+                        DateTime.ParseExact("10/9/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19547,8 +19088,7 @@ namespace ToolsBazaar.Persistence
                     Id = 461,
                     Customer = GetCustomerById(91),
                     Date =
-                        DateTime
-                           .Parse("12/13/2020"),
+                        DateTime.ParseExact("12/13/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19615,8 +19155,7 @@ namespace ToolsBazaar.Persistence
                     Id = 462,
                     Customer = GetCustomerById(91),
                     Date =
-                        DateTime
-                           .Parse("8/16/2016"),
+                        DateTime.ParseExact("8/16/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19651,8 +19190,7 @@ namespace ToolsBazaar.Persistence
                     Id = 463,
                     Customer = GetCustomerById(1),
                     Date =
-                        DateTime
-                           .Parse("9/22/2017"),
+                        DateTime.ParseExact("9/22/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19679,8 +19217,7 @@ namespace ToolsBazaar.Persistence
                     Id = 464,
                     Customer = GetCustomerById(85),
                     Date =
-                        DateTime
-                           .Parse("10/10/2012"),
+                        DateTime.ParseExact("10/10/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19739,8 +19276,7 @@ namespace ToolsBazaar.Persistence
                     Id = 465,
                     Customer = GetCustomerById(31),
                     Date =
-                        DateTime
-                           .Parse("10/7/2022"),
+                        DateTime.ParseExact("10/7/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19783,8 +19319,7 @@ namespace ToolsBazaar.Persistence
                     Id = 466,
                     Customer = GetCustomerById(41),
                     Date =
-                        DateTime
-                           .Parse("8/19/2021"),
+                        DateTime.ParseExact("8/19/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19803,8 +19338,7 @@ namespace ToolsBazaar.Persistence
                     Id = 467,
                     Customer = GetCustomerById(59),
                     Date =
-                        DateTime
-                           .Parse("8/30/2019"),
+                        DateTime.ParseExact("8/30/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19847,8 +19381,7 @@ namespace ToolsBazaar.Persistence
                     Id = 468,
                     Customer = GetCustomerById(61),
                     Date =
-                        DateTime
-                           .Parse("6/6/2022"),
+                        DateTime.ParseExact("6/6/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19915,8 +19448,7 @@ namespace ToolsBazaar.Persistence
                     Id = 469,
                     Customer = GetCustomerById(23),
                     Date =
-                        DateTime
-                           .Parse("10/17/2021"),
+                        DateTime.ParseExact("10/17/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19959,8 +19491,7 @@ namespace ToolsBazaar.Persistence
                     Id = 470,
                     Customer = GetCustomerById(91),
                     Date =
-                        DateTime
-                           .Parse("9/21/2017"),
+                        DateTime.ParseExact("9/21/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -19987,8 +19518,7 @@ namespace ToolsBazaar.Persistence
                     Id = 471,
                     Customer = GetCustomerById(99),
                     Date =
-                        DateTime
-                           .Parse("7/12/2014"),
+                        DateTime.ParseExact("7/12/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20015,8 +19545,7 @@ namespace ToolsBazaar.Persistence
                     Id = 472,
                     Customer = GetCustomerById(3),
                     Date =
-                        DateTime
-                           .Parse("8/14/2014"),
+                        DateTime.ParseExact("8/14/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20043,8 +19572,7 @@ namespace ToolsBazaar.Persistence
                     Id = 473,
                     Customer = GetCustomerById(57),
                     Date =
-                        DateTime
-                           .Parse("9/9/2022"),
+                        DateTime.ParseExact("9/9/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20063,8 +19591,7 @@ namespace ToolsBazaar.Persistence
                     Id = 474,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("5/10/2020"),
+                        DateTime.ParseExact("5/10/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20091,8 +19618,7 @@ namespace ToolsBazaar.Persistence
                     Id = 475,
                     Customer = GetCustomerById(75),
                     Date =
-                        DateTime
-                           .Parse("10/12/2021"),
+                        DateTime.ParseExact("10/12/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20135,8 +19661,7 @@ namespace ToolsBazaar.Persistence
                     Id = 476,
                     Customer = GetCustomerById(9),
                     Date =
-                        DateTime
-                           .Parse("10/12/2011"),
+                        DateTime.ParseExact("10/12/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20155,8 +19680,7 @@ namespace ToolsBazaar.Persistence
                     Id = 477,
                     Customer = GetCustomerById(23),
                     Date =
-                        DateTime
-                           .Parse("11/17/2017"),
+                        DateTime.ParseExact("11/17/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20191,8 +19715,7 @@ namespace ToolsBazaar.Persistence
                     Id = 478,
                     Customer = GetCustomerById(51),
                     Date =
-                        DateTime
-                           .Parse("6/8/2017"),
+                        DateTime.ParseExact("6/8/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20251,8 +19774,7 @@ namespace ToolsBazaar.Persistence
                     Id = 479,
                     Customer = GetCustomerById(7),
                     Date =
-                        DateTime
-                           .Parse("8/16/2011"),
+                        DateTime.ParseExact("8/16/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20279,8 +19801,7 @@ namespace ToolsBazaar.Persistence
                     Id = 480,
                     Customer = GetCustomerById(77),
                     Date =
-                        DateTime
-                           .Parse("11/27/2011"),
+                        DateTime.ParseExact("11/27/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20339,8 +19860,7 @@ namespace ToolsBazaar.Persistence
                     Id = 481,
                     Customer = GetCustomerById(63),
                     Date =
-                        DateTime
-                           .Parse("10/13/2011"),
+                        DateTime.ParseExact("10/13/2011", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20399,8 +19919,7 @@ namespace ToolsBazaar.Persistence
                     Id = 482,
                     Customer = GetCustomerById(7),
                     Date =
-                        DateTime
-                           .Parse("9/2/2022"),
+                        DateTime.ParseExact("9/2/2022", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20427,8 +19946,7 @@ namespace ToolsBazaar.Persistence
                     Id = 483,
                     Customer = GetCustomerById(1),
                     Date =
-                        DateTime
-                           .Parse("2/2/2010"),
+                        DateTime.ParseExact("2/2/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20463,8 +19981,7 @@ namespace ToolsBazaar.Persistence
                     Id = 484,
                     Customer = GetCustomerById(95),
                     Date =
-                        DateTime
-                           .Parse("12/1/2021"),
+                        DateTime.ParseExact("12/1/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20483,8 +20000,7 @@ namespace ToolsBazaar.Persistence
                     Id = 485,
                     Customer = GetCustomerById(15),
                     Date =
-                        DateTime
-                           .Parse("9/6/2019"),
+                        DateTime.ParseExact("9/6/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20503,8 +20019,7 @@ namespace ToolsBazaar.Persistence
                     Id = 486,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("7/7/2012"),
+                        DateTime.ParseExact("7/7/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20531,8 +20046,7 @@ namespace ToolsBazaar.Persistence
                     Id = 487,
                     Customer = GetCustomerById(79),
                     Date =
-                        DateTime
-                           .Parse("8/3/2021"),
+                        DateTime.ParseExact("8/3/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20551,8 +20065,7 @@ namespace ToolsBazaar.Persistence
                     Id = 488,
                     Customer = GetCustomerById(49),
                     Date =
-                        DateTime
-                           .Parse("8/30/2016"),
+                        DateTime.ParseExact("8/30/2016", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20573,8 +20086,7 @@ namespace ToolsBazaar.Persistence
                     Id = 489,
                     Customer = GetCustomerById(53),
                     Date =
-                        DateTime
-                           .Parse("7/21/2021"),
+                        DateTime.ParseExact("7/21/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20601,8 +20113,7 @@ namespace ToolsBazaar.Persistence
                     Id = 490,
                     Customer = GetCustomerById(51),
                     Date =
-                        DateTime
-                           .Parse("6/17/2017"),
+                        DateTime.ParseExact("6/17/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20621,8 +20132,7 @@ namespace ToolsBazaar.Persistence
                     Id = 491,
                     Customer = GetCustomerById(67),
                     Date =
-                        DateTime
-                           .Parse("2/20/2021"),
+                        DateTime.ParseExact("2/20/2021", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20665,8 +20175,7 @@ namespace ToolsBazaar.Persistence
                     Id = 492,
                     Customer = GetCustomerById(59),
                     Date =
-                        DateTime
-                           .Parse("4/8/2019"),
+                        DateTime.ParseExact("4/8/2019", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20693,8 +20202,7 @@ namespace ToolsBazaar.Persistence
                     Id = 493,
                     Customer = GetCustomerById(85),
                     Date =
-                        DateTime
-                           .Parse("3/10/2017"),
+                        DateTime.ParseExact("3/10/2017", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20713,8 +20221,7 @@ namespace ToolsBazaar.Persistence
                     Id = 494,
                     Customer = GetCustomerById(63),
                     Date =
-                        DateTime
-                           .Parse("1/25/2012"),
+                        DateTime.ParseExact("1/25/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20789,8 +20296,7 @@ namespace ToolsBazaar.Persistence
                     Id = 495,
                     Customer = GetCustomerById(17),
                     Date =
-                        DateTime
-                           .Parse("4/4/2014"),
+                        DateTime.ParseExact("4/4/2014", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20825,8 +20331,7 @@ namespace ToolsBazaar.Persistence
                     Id = 496,
                     Customer = GetCustomerById(55),
                     Date =
-                        DateTime
-                           .Parse("7/1/2012"),
+                        DateTime.ParseExact("7/1/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20853,8 +20358,7 @@ namespace ToolsBazaar.Persistence
                     Id = 497,
                     Customer = GetCustomerById(87),
                     Date =
-                        DateTime
-                           .Parse("4/6/2010"),
+                        DateTime.ParseExact("4/6/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20873,8 +20377,7 @@ namespace ToolsBazaar.Persistence
                     Id = 498,
                     Customer = GetCustomerById(29),
                     Date =
-                        DateTime
-                           .Parse("10/13/2012"),
+                        DateTime.ParseExact("10/13/2012", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20892,8 +20395,7 @@ namespace ToolsBazaar.Persistence
                     Id = 499,
                     Customer = GetCustomerById(99),
                     Date =
-                        DateTime
-                           .Parse("9/1/2010"),
+                        DateTime.ParseExact("9/1/2010", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
@@ -20935,8 +20437,7 @@ namespace ToolsBazaar.Persistence
                     Id = 500,
                     Customer = GetCustomerById(87),
                     Date =
-                        DateTime
-                           .Parse("6/6/2020"),
+                        DateTime.ParseExact("6/6/2020", "M/d/yyyy", CultureInfo.InvariantCulture),
                     Items = new List<OrderItem>
                             {
                                 new OrderItem
