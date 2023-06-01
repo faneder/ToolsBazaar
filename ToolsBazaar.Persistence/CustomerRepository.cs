@@ -6,7 +6,7 @@ public class CustomerRepository : ICustomerRepository
 {
     public IEnumerable<Customer> GetAll() => DataSet.AllCustomers;
 
-    public Customer? UpdateCustomerName(int customerId, string name)
+    public Customer? Update(int customerId, string name)
     {
         var customer = DataSet.AllCustomers.FirstOrDefault(c => c.Id == customerId);
 
