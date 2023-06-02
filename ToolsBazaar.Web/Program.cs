@@ -1,8 +1,10 @@
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Localization;
 using ToolsBazaar.Domain.CustomerAggregate;
 using ToolsBazaar.Domain.OrderAggregate;
 using ToolsBazaar.Domain.ProductAggregate;
 using ToolsBazaar.Persistence;
+using ToolsBazaar.Web.Handlers;
 using ToolsBazaar.Web.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,9 +15,14 @@ builder.Services.AddTransient<ICustomerRepository, CustomerRepository>();
 builder.Services.AddTransient<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 
+builder.Services.AddAuthentication("ApiKey")
+    .AddScheme<AuthenticationSchemeOptions, ApiKeyAuthenticationHandler>("ApiKey", options => { });
+
 var app = builder.Build();
 
 app.UseRouting();
+app.UseAuthentication();
+app.UseAuthorization();
 
 var requestCulture = new RequestCulture("en-US");
 requestCulture.Culture.DateTimeFormat.ShortDatePattern = "MM-dd-yyyy";

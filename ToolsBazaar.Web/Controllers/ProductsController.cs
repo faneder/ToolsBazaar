@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ToolsBazaar.Domain.ProductAggregate;
 
 namespace ToolsBazaar.Web.Controllers;
@@ -16,6 +17,7 @@ public class ProductsController : ControllerBase
         _productRepository = productRepository;
     }
 
+    [Authorize(AuthenticationSchemes = "ApiKey")]
     [HttpGet("most-expensive")]
     public IActionResult GetMostExpensiveProducts()
     {
