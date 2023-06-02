@@ -8,4 +8,9 @@ public class Order
     public DateTime Date { get; init; }
     public List<OrderItem> Items { get; init; }
     public Customer Customer { get; init; }
+
+    public decimal CalculateTotalPrice()
+    {
+        return Items.Sum(item => item.Price);
+    }
 }
