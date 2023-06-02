@@ -34,4 +34,15 @@ public class CustomersController : ControllerBase
 
         return NoContent();
     }
+
+    [HttpGet("top")]
+    public ActionResult<List<Customer>> GetTopCustomer()
+    {
+        _logger.LogInformation("Retrieving the top customers...");
+
+        var topFiveCustomersBySpending = _customerService.GetTopFiveCustomersBySpending(new DateTime(2015, 1, 1), new DateTime(2022, 12, 31));
+
+        return Ok(topFiveCustomersBySpending);
+    }
+    
 }

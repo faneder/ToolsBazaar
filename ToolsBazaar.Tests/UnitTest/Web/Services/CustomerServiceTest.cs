@@ -44,7 +44,7 @@ public class CustomerServiceTest
     }
     
     [Fact]
-    public void FilterCustomersBySpending_ReturnsTopFiveCustomers()
+    public void FilterCustomers_ReturnsTopFiveCustomersSortedBySpendingDesc()
     {
         var order2 = CreateOrder(2, 20);
         var order3 = CreateOrder(3, 30);
@@ -60,6 +60,40 @@ public class CustomerServiceTest
 
         result.Count.Should().Be(5);
         result.Should().BeEquivalentTo(new[] { order6.Customer, order5.Customer, order4.Customer, order3.Customer, order2.Customer });
+    }
+
+    [Fact]
+    public void GivenTwoCustomersWithMultipleOrders_ReturnsTwoCustomer()
+    {
+        var order1 = CreateOrder(1, 100);
+        var order2 = CreateOrder(2, 50);
+        var order3 = CreateOrder(2, 100);
+        
+        var orders = new List<Order> { order1, order2, order3};
+
+        _mockOrderRepository.FindAllByOrderDateBetween(Arg.Any<DateTime>(), Arg.Any<DateTime>()).Returns(orders);
+        
+        var service = new CustomerService(_mockCustomerRepository, _mockOrderRepository);
+        var result = service.GetTopFiveCustomersBySpending(new DateTime(1000, 1, 1), new DateTime(9999, 9, 9));
+
+        result.Count.Should().Be(2);
+        result.Should().BeEquivalentTo(new[] { order2.Customer, order1.Customer });
+    }
+
+    [Fact]
+    public void GivenUnderFiveCustomers_ReturnCustomers()
+    {
+        var order1 = CreateOrder(1, 10);
+        var order2 = CreateOrder(2, 20);
+        var orders = new List<Order> { order1, order2 };
+
+        _mockOrderRepository.FindAllByOrderDateBetween(Arg.Any<DateTime>(), Arg.Any<DateTime>()).Returns(orders);
+        
+        var service = new CustomerService(_mockCustomerRepository, _mockOrderRepository);
+        var result = service.GetTopFiveCustomersBySpending(new DateTime(1000, 1, 1), new DateTime(9999, 9, 9));
+
+        result.Count.Should().Be(2);
+        result.Should().BeEquivalentTo(new[] { order2.Customer, order1.Customer });
     }
 
     private static Order CreateOrder(int id, int price)
